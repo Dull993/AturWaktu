@@ -185,6 +185,7 @@ void MainWindow::checkAlarm() {
         }
     }
 }
+//hapus alarm
 void MainWindow::deleteAlarm() {
 
     // ambil item yang dipilih
