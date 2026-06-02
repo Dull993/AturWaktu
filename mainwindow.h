@@ -28,13 +28,19 @@ private slots:
 private:
     Ui::MainWindow *ui;
 
+
     QTimer *timer;
+    bool isRunning   = false;
+    int  detik       = 0;
+    int  lapCount    = 0;
+
+    // Timer
     QTimer *countdownTimer;
-    QTimer *alarmTimer;
     bool isTimerRunning = false;
-    bool isRunning = false;
-    int detik = 0;
-    int sisaDetik = 0;
+    int  sisaDetik      = 0;
+
+    // Alarm
+    QTimer *alarmTimer;
 };
 
 #endif // MAINWINDOW_H

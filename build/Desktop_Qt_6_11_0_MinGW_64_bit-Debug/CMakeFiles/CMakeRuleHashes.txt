@@ -1,3 +1,0 @@
-# Hashes of file build rules.
-fd0aea266722ea3cc51d1ab2c8b96727 AturWaktu_autogen/timestamp
-206dde96c1aeb56a1fcc8c69c31a3908 CMakeFiles/AturWaktu_autogen

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-
+//test commit
 project(AturWaktu VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_AUTOUIC ON)
@@ -23,6 +23,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(AturWaktu
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        toggleswitch.h
+        alarmcardwidget.h
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET AturWaktu APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
