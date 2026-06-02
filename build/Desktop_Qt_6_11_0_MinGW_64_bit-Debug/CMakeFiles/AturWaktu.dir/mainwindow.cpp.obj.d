@@ -404,6 +404,11 @@ CMakeFiles/AturWaktu.dir/mainwindow.cpp.obj: \
  D:/Qt/6.11.0/mingw_64/include/QtGui/qinputmethod.h \
  D:/Qt/6.11.0/mingw_64/include/QtCore/qlocale.h \
  D:/Qt/6.11.0/mingw_64/include/QtGui/qguiapplication_platform.h \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/QHBoxLayout \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/qboxlayout.h \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/qlayout.h \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/qlayoutitem.h \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/qgridlayout.h \
  D:/Qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
  D:/Qt/6.11.0/mingw_64/include/QtWidgets/qlabel.h \
  D:/Qt/6.11.0/mingw_64/include/QtWidgets/qframe.h \
@@ -435,6 +440,7 @@ CMakeFiles/AturWaktu.dir/mainwindow.cpp.obj: \
  D:/Qt/6.11.0/mingw_64/include/QtWidgets/QPushButton \
  D:/Qt/6.11.0/mingw_64/include/QtWidgets/qpushbutton.h \
  D:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/QSpacerItem \
  D:/Qt/6.11.0/mingw_64/include/QtWidgets/QStatusBar \
  D:/Qt/6.11.0/mingw_64/include/QtWidgets/qstatusbar.h \
  D:/Qt/6.11.0/mingw_64/include/QtWidgets/QTabWidget \
@@ -444,10 +450,6 @@ CMakeFiles/AturWaktu.dir/mainwindow.cpp.obj: \
  D:/Qt/6.11.0/mingw_64/include/QtCore/qdatetime.h \
  D:/Qt/6.11.0/mingw_64/include/QtCore/qcalendar.h \
  D:/Qt/6.11.0/mingw_64/include/QtWidgets/QVBoxLayout \
- D:/Qt/6.11.0/mingw_64/include/QtWidgets/qboxlayout.h \
- D:/Qt/6.11.0/mingw_64/include/QtWidgets/qlayout.h \
- D:/Qt/6.11.0/mingw_64/include/QtWidgets/qlayoutitem.h \
- D:/Qt/6.11.0/mingw_64/include/QtWidgets/qgridlayout.h \
  D:/Qt/6.11.0/mingw_64/include/QtWidgets/QWidget \
  D:/Qt/6.11.0/mingw_64/include/QtCore/QTime \
  D:/Qt/6.11.0/mingw_64/include/QtWidgets/QMessageBox \
