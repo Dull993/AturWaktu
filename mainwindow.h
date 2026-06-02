@@ -19,8 +19,8 @@ public:
     ~MainWindow() override;
 
 private slots:
-    void updateWaktu();   // Stopwatch tick (10ms)
-    void updateTimer();   // Timer countdown (1s)
+    void updateWaktu();
+    void updateTimer();
     void addAlarm();
     void checkAlarm();
     void deleteAlarm();
@@ -28,10 +28,10 @@ private slots:
 private:
     Ui::MainWindow *ui;
 
-    // Stopwatch
+
     QTimer *timer;
     bool isRunning   = false;
-    int  detik       = 0;   // satuan 10ms (centisecond)
+    int  detik       = 0;
     int  lapCount    = 0;
 
     // Timer

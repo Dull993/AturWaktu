@@ -3,6 +3,7 @@
 
 #include <QCheckBox>
 #include <QPainter>
+#include <QMouseEvent>
 
 class ToggleSwitch : public QCheckBox {
     Q_OBJECT
@@ -13,26 +14,36 @@ public:
     }
 
 protected:
+
+    void mouseReleaseEvent(QMouseEvent *event) override {
+        if (event->button() == Qt::LeftButton) {
+            setChecked(!isChecked());
+            event->accept();
+        } else {
+            QCheckBox::mouseReleaseEvent(event);
+        }
+    }
+
+    void mousePressEvent(QMouseEvent *event) override {
+        if (event->button() == Qt::LeftButton) {
+            event->accept();
+        } else {
+            QCheckBox::mousePressEvent(event);
+        }
+    }
+
+
     void paintEvent(QPaintEvent *event) override {
         Q_UNUSED(event);
         QPainter painter(this);
         painter.setRenderHint(QPainter::Antialiasing);
 
-        QBrush brush;
-        int x_pos;
-
-        if (isChecked()) {
-            brush = QBrush(QColor("#d66efd"));
-            x_pos = width() - 24;
-        } else {
-            brush = QBrush(QColor("#e4e3e9"));
-            x_pos = 4;
-        }
+        QBrush brush = isChecked() ? QBrush(QColor("#b67bfb")) : QBrush(QColor("#e4e3e9"));
+        int x_pos = isChecked() ? width() - 24 : 4;
 
         painter.setPen(Qt::NoPen);
         painter.setBrush(brush);
         painter.drawRoundedRect(0, 0, width(), height(), 14, 14);
-
         painter.setBrush(QBrush(Qt::white));
         painter.drawEllipse(x_pos, 4, 20, 20);
     }

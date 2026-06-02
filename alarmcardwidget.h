@@ -16,10 +16,9 @@ public:
     AlarmCardWidget(const QString &timeStr, const QString &daysStr, bool isOn = true, QWidget *parent = nullptr)
         : QWidget(parent)
     {
-        // 1. Container Utama (Card Putih)
         container = new QFrame(this);
         container->setObjectName("AlarmCard");
-        container->setMinimumHeight(85); // Beri ruang vertikal yang cukup
+        container->setMinimumHeight(85);
         container->setStyleSheet(
             "QFrame#AlarmCard {"
             "   background-color: white;"
@@ -27,22 +26,20 @@ public:
             "}"
             );
 
-        // Efek Shadow Lembut
         QGraphicsDropShadowEffect *shadow = new QGraphicsDropShadowEffect(this);
         shadow->setBlurRadius(12);
         shadow->setColor(QColor(0, 0, 0, 15));
         shadow->setOffset(0, 3);
         container->setGraphicsEffect(shadow);
 
-        // 2. Icon Bel
         iconLabel = new QLabel("🔔", container);
         iconLabel->setFixedSize(42, 42);
         iconLabel->setAlignment(Qt::AlignCenter);
 
-        // 3. Layout Teks Jam & Hari
+        // 3. Layout Teks Vertikal (Jam & Hari)
         QVBoxLayout *textLayout = new QVBoxLayout();
-        textLayout->setSpacing(2);
-        textLayout->setContentsMargins(0, 4, 0, 4);
+        textLayout->setSpacing(4);
+        textLayout->setContentsMargins(0, 2, 0, 2);
 
         timeLabel = new QLabel(timeStr, container);
         descLabel = new QLabel(daysStr, container);
@@ -51,36 +48,35 @@ public:
         textLayout->addWidget(timeLabel);
         textLayout->addWidget(descLabel);
 
-        // 4. Toggle Switch
         toggleSwitch = new ToggleSwitch(container);
         toggleSwitch->setChecked(isOn);
 
-
-        // 5. Tombol Hapus (Dibuat kontras tinggi agar tidak samar/hilang)
-        btnDelete = new QPushButton("Hapus", container);
+        btnDelete = new QPushButton("🗑", container);
         btnDelete->setFixedSize(36, 36);
         btnDelete->setCursor(Qt::PointingHandCursor);
         btnDelete->setStyleSheet(
             "QPushButton {"
-            "   background-color: #ff4d6d;" // Merah solid cerah sebagai background
-            "   color: white;"              // Teks silang warna PUTIH TEGAS
+            "   background-color: #fff0f3;"
+            "   color: #ff5c75;"
             "   border: none;"
             "   border-radius: 10px;"
-            "   font-size: 16px;"           // Perbesar ukuran silang ke 16px
-            "   font-weight: bold;"         // Buat huruf X menjadi tebal
+            "   font-size: 14px;"
+            "   font-weight: bold;"
             "   font-family: 'Segoe UI', Arial;"
+            "   padding: 0px;"
             "}"
             "QPushButton:hover {"
-            "   background-color: #ff758f;" // Merah agak terang saat di-hover
+            "   background-color: #ff4d6d;"
+            "   color: white;"
             "}"
             "QPushButton:pressed {"
-            "   background-color: #c9184a;" // Merah tua saat diklik
+            "   background-color: #c9184a;"
             "}"
             );
 
-        // 6. Susun Komponen ke dalam Layout Container (Horizontal)
+
         QHBoxLayout *cardLayout = new QHBoxLayout(container);
-        cardLayout->setContentsMargins(16, 12, 16, 12);
+        cardLayout->setContentsMargins(18, 12, 18, 12);
         cardLayout->setSpacing(14);
 
         cardLayout->addWidget(iconLabel);
@@ -89,24 +85,22 @@ public:
         cardLayout->addWidget(toggleSwitch);
         cardLayout->addWidget(btnDelete);
 
-        // 7. Layout Utama Widget
         QVBoxLayout *mainLayout = new QVBoxLayout(this);
-        mainLayout->setContentsMargins(8, 6, 8, 6);
+        mainLayout->setContentsMargins(8, 4, 8, 4);
         mainLayout->addWidget(container);
 
-        // Hubungkan Signal & Slot
+
         connect(toggleSwitch, &ToggleSwitch::toggled, this, &AlarmCardWidget::updateCardStyle);
         connect(btnDelete, &QPushButton::clicked, this, &AlarmCardWidget::deletePressed);
 
         updateCardStyle(isOn);
     }
 
-    // Fungsi getter penampung data
     QString getTimeText() const { return timeLabel->text(); }
     QString getDaysText() const { return descLabel->text(); }
     bool isAlarmActive() const { return toggleSwitch->isChecked(); }
 
-    // Memaksa QListWidget memberikan ruang vertikal yang lega
+
     QSize sizeHint() const override {
         return QSize(width(), 97);
     }

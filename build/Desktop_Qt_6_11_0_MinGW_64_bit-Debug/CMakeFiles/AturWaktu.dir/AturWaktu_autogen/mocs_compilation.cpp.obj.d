@@ -411,6 +411,33 @@ CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.obj: \
  D:/Qt/6.11.0/mingw_64/include/QtGui/qpainter.h \
  D:/Qt/6.11.0/mingw_64/include/QtGui/qtextoption.h \
  D:/Qt/6.11.0/mingw_64/include/QtGui/qpen.h \
+ D:/Qt/6.11.0/mingw_64/include/QtGui/QMouseEvent \
+ D:/Qt/6.11.0/mingw_64/include/QtGui/qevent.h \
+ D:/Qt/6.11.0/mingw_64/include/QtCore/qcoreevent.h \
+ D:/Qt/6.11.0/mingw_64/include/QtCore/qbasictimer.h \
+ D:/Qt/6.11.0/mingw_64/include/QtCore/qabstracteventdispatcher.h \
+ D:/Qt/6.11.0/mingw_64/include/QtCore/qeventloop.h \
+ D:/Qt/6.11.0/mingw_64/include/QtCore/qdeadlinetimer.h \
+ D:/Qt/6.11.0/mingw_64/include/QtGui/qeventpoint.h \
+ D:/Qt/6.11.0/mingw_64/include/QtGui/qvector2d.h \
+ D:/Qt/6.11.0/mingw_64/include/QtGui/qvectornd.h \
+ D:/Qt/6.11.0/mingw_64/include/QtGui/qpointingdevice.h \
+ D:/Qt/6.11.0/mingw_64/include/QtGui/qinputdevice.h \
+ D:/Qt/6.11.0/mingw_64/include/QtGui/qscreen.h \
+ D:/Qt/6.11.0/mingw_64/include/QtCore/QList \
+ D:/Qt/6.11.0/mingw_64/include/QtCore/QObject \
+ D:/Qt/6.11.0/mingw_64/include/QtCore/QRect \
+ D:/Qt/6.11.0/mingw_64/include/QtCore/QSize \
+ D:/Qt/6.11.0/mingw_64/include/QtCore/QSizeF \
+ D:/Qt/6.11.0/mingw_64/include/QtGui/QTransform \
+ D:/Qt/6.11.0/mingw_64/include/QtCore/qnativeinterface.h \
+ D:/Qt/6.11.0/mingw_64/include/QtGui/qscreen_platform.h \
+ D:/Qt/6.11.0/mingw_64/include/QtGui/qguiapplication.h \
+ D:/Qt/6.11.0/mingw_64/include/QtCore/qcoreapplication.h \
+ D:/Qt/6.11.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
+ D:/Qt/6.11.0/mingw_64/include/QtGui/qinputmethod.h \
+ D:/Qt/6.11.0/mingw_64/include/QtCore/qlocale.h \
+ D:/Qt/6.11.0/mingw_64/include/QtGui/qguiapplication_platform.h \
  D:/Qt/6.11.0/mingw_64/include/QtGui/qtextcursor.h \
  D:/Qt/6.11.0/mingw_64/include/QtGui/qtextformat.h \
  D:/Qt/6.11.0/mingw_64/include/QtCore/qtmochelpers.h \
@@ -423,9 +450,5 @@ CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.obj: \
  D:/Qt/6.11.0/mingw_64/include/QtWidgets/qtabwidget.h \
  D:/Qt/6.11.0/mingw_64/include/QtCore/QTimer \
  D:/Qt/6.11.0/mingw_64/include/QtCore/qtimer.h \
- D:/Qt/6.11.0/mingw_64/include/QtCore/qbasictimer.h \
- D:/Qt/6.11.0/mingw_64/include/QtCore/qabstracteventdispatcher.h \
- D:/Qt/6.11.0/mingw_64/include/QtCore/qeventloop.h \
- D:/Qt/6.11.0/mingw_64/include/QtCore/qdeadlinetimer.h \
  C:\Users\Lenovo\Desktop\bljrgit\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AturWaktu_autogen\EWIEGA46WW/moc_toggleswitch.cpp \
  C:/Users/Lenovo/Desktop/bljrgit/AturWaktu/toggleswitch.h
