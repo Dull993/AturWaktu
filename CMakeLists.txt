@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-
+test
 project(AturWaktu VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_AUTOUIC ON)
