@@ -522,7 +522,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabAturWaktu->setCurrentIndex(1);
+        tabAturWaktu->setCurrentIndex(2);
 
 
         QMetaObject::connectSlotsByName(MainWindow);

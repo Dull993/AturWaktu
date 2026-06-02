@@ -2,6 +2,7 @@
 #include "./ui_mainwindow.h"
 #include <QTime>
 #include <QMessageBox>
+#include "alarmcardwidget.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -9,115 +10,76 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    // ── Styling TabWidget & TabBar (harus di-set lewat widget, bukan global) ──
+    // ── Styling TabWidget & TabBar ──
     ui->tabAturWaktu->setStyleSheet(R"(
         QTabWidget::pane {
             border: none;
             background-color: #f8f7fc;
         }
+        QTabBar {
+            alignment: center;
+        }
         QTabBar::tab {
-            background-color: #ede9f8;
-            color: #6b6880;
-            font-size: 13px;
-            padding: 8px 28px;
-            margin: 2px 3px;
-            border-radius: 10px;
-            min-width: 100px;
+            background-color: transparent;
+            color: #a09eaa;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 10px 26px;
+            margin: 6px 4px;
+            border-radius: 12px;
         }
         QTabBar::tab:selected {
-            background-color: #8c73f2;
+            background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #b67bfb, stop:1 #f57db1);
             color: #ffffff;
             font-weight: bold;
         }
         QTabBar::tab:hover:!selected {
-            background-color: #ddd6f7;
+            background-color: #ede9f8;
+            color: #6b6880;
         }
     )");
 
-    // ── Background utama ──
     this->centralWidget()->setStyleSheet("background-color: #f8f7fc;");
 
-    // ── Label ──
-    ui->labelTitle->setStyleSheet(
-        "font-size: 22px; font-weight: bold; color: #14121e;");
-    ui->labelStopwatch->setStyleSheet(
-        "font-size: 52px; font-weight: bold; color: #14121e;");
-    ui->labelTimer->setStyleSheet(
-        "font-size: 52px; font-weight: bold; color: #14121e;");
-    ui->labelTimerRemaining->setStyleSheet(
-        "font-size: 12px; color: #a09eaa;");
-    ui->labelSWHeader->setStyleSheet(
-        "font-size: 12px; font-weight: bold; color: #a09eaa; letter-spacing: 1px;");
-    ui->labelTimerHeader->setStyleSheet(
-        "font-size: 12px; font-weight: bold; color: #a09eaa; letter-spacing: 1px;");
+    // ── Label Stylesheet ──
+    ui->labelTitle->setStyleSheet("font-size: 22px; font-weight: bold; color: #14121e;");
+    ui->labelStopwatch->setStyleSheet("font-size: 52px; font-weight: bold; color: #14121e;");
+    ui->labelTimer->setStyleSheet("font-size: 52px; font-weight: bold; color: #14121e;");
+    ui->labelTimerRemaining->setStyleSheet("font-size: 12px; color: #a09eaa;");
+    ui->labelSWHeader->setStyleSheet("font-size: 12px; font-weight: bold; color: #a09eaa; letter-spacing: 1px;");
+    ui->labelTimerHeader->setStyleSheet("font-size: 12px; font-weight: bold; color: #a09eaa; letter-spacing: 1px;");
 
-    // ── Tombol Stopwatch ──
-    ui->btnStartSW->setStyleSheet(
-        "background-color: #8c73f2; color: white; border: none;"
-        "border-radius: 10px; padding: 10px 20px; font-weight: bold;");
-    ui->btnLapSW->setStyleSheet(
-        "background-color: #fff0f6; color: #fa73a6;"
-        "border: 1px solid #fac0d5; border-radius: 10px; padding: 10px 20px; font-weight: bold;");
-    ui->btnResetSW->setStyleSheet(
-        "background-color: #ede9f8; color: #8c73f2;"
-        "border: 1px solid #c9bff5; border-radius: 10px; padding: 10px 20px; font-weight: bold;");
+    // ── Tombol Utama Gradasi ──
+    QString gradientPrimaryStyle =
+        "QPushButton {"
+        "   background: qlineargradient(x1:0, y1:0, x2:1, y2:0, stop:0 #b67bfb, stop:1 #f57db1);"
+        "   color: white; border: none; border-radius: 14px; padding: 12px 24px; font-weight: bold;"
+        "}"
+        "QPushButton:hover { opacity: 0.9; }";
 
-    // ── Tombol Timer ──
-    ui->btnStartTimer->setStyleSheet(
-        "background-color: #8c73f2; color: white; border: none;"
-        "border-radius: 10px; padding: 10px 20px; font-weight: bold;");
-    ui->btnResetTimer->setStyleSheet(
-        "background-color: #ede9f8; color: #8c73f2;"
-        "border: 1px solid #c9bff5; border-radius: 10px; padding: 10px 20px; font-weight: bold;");
+    ui->btnStartSW->setStyleSheet(gradientPrimaryStyle);
+    ui->btnStartTimer->setStyleSheet(gradientPrimaryStyle);
+    ui->btnAddAlarm->setStyleSheet(gradientPrimaryStyle);
+
+    // ── Tombol Sekunder ──
+    ui->btnLapSW->setStyleSheet("background-color: #fff0f6; color: #fa73a6; border: 1px solid #fac0d5; border-radius: 10px; padding: 10px 20px; font-weight: bold;");
+    ui->btnResetSW->setStyleSheet("background-color: #ede9f8; color: #8c73f2; border: 1px solid #c9bff5; border-radius: 10px; padding: 10px 20px; font-weight: bold;");
+    ui->btnResetTimer->setStyleSheet("background-color: #ede9f8; color: #8c73f2; border: 1px solid #c9bff5; border-radius: 10px; padding: 10px 20px; font-weight: bold;");
+    ui->btnDeleteAlarm->setStyleSheet("background-color: #ede9f8; color: #8c73f2; border: 1px solid #c9bff5; border-radius: 10px; padding: 10px 20px; font-weight: bold;");
 
     // ── Preset Timer ──
-    QString presetStyle =
-        "background-color: #ede9f8; color: #8c73f2;"
-        "border: 1px solid #c9bff5; border-radius: 16px;"
-        "padding: 6px 14px; font-weight: bold;";
+    QString presetStyle = "background-color: #ede9f8; color: #8c73f2; border: 1px solid #c9bff5; border-radius: 16px; padding: 6px 14px; font-weight: bold;";
     ui->btnPreset5->setStyleSheet(presetStyle);
     ui->btnPreset10->setStyleSheet(presetStyle);
     ui->btnPreset15->setStyleSheet(presetStyle);
     ui->btnPreset30->setStyleSheet(presetStyle);
 
-    // ── Tombol Alarm ──
-    ui->btnAddAlarm->setStyleSheet(
-        "background-color: #8c73f2; color: white; border: none;"
-        "border-radius: 10px; padding: 10px 20px; font-weight: bold;");
-    ui->btnDeleteAlarm->setStyleSheet(
-        "background-color: #ede9f8; color: #8c73f2;"
-        "border: 1px solid #c9bff5; border-radius: 10px; padding: 10px 20px; font-weight: bold;");
-
-    // ── List Alarm ──
-    ui->listAlarm->setStyleSheet(R"(
-        QListWidget {
-            background-color: #ffffff;
-            border: 1px solid #e0ddf0;
-            border-radius: 12px;
-            padding: 4px;
-            color: #14121e;
-        }
-        QListWidget::item { padding: 8px 10px; border-radius: 8px; }
-        QListWidget::item:selected { background-color: #ede9f8; }
-        QListWidget::item:hover { background-color: #f3f0fb; }
-    )");
-
-    // ── List Lap ──
-    ui->listLap->setStyleSheet(R"(
-        QListWidget {
-            background-color: #ffffff;
-            border: 1px solid #e0ddf0;
-            border-radius: 12px;
-            padding: 4px;
-            color: #14121e;
-        }
-        QListWidget::item { padding: 6px 10px; border-radius: 8px; }
-        QListWidget::item:selected { background-color: #fff0f6; color: #fa73a6; }
-        QListWidget::item:hover { background-color: #f3f0fb; }
-    )");
+    // ── QListWidget Setup ──
+    ui->listAlarm->setStyleSheet("QListWidget { background-color: transparent; border: none; } QListWidget::item { background-color: transparent; } QListWidget::item:selected { background-color: transparent; }");
+    ui->listLap->setStyleSheet("QListWidget { background-color: #ffffff; border: 1px solid #e0ddf0; border-radius: 12px; padding: 4px; color: #14121e; } QListWidget::item { padding: 6px 10px; border-radius: 8px; } QListWidget::item:selected { background-color: #fff0f6; color: #fa73a6; } QListWidget::item:hover { background-color: #f3f0fb; }");
 
     // ══════════════════════════════════════════════
-    //  STOPWATCH  (interval 10ms → centisecond)
+    //  STOPWATCH INITIALIZATION
     // ══════════════════════════════════════════════
     timer = new QTimer(this);
     timer->setInterval(10);
@@ -145,24 +107,19 @@ MainWindow::MainWindow(QWidget *parent)
         ui->listLap->clear();
     });
 
-    // LAP — catat waktu saat ini ke listLap
     connect(ui->btnLapSW, &QPushButton::clicked, this, [=]() {
-        if (!isRunning && detik == 0) return; // belum mulai sama sekali
+        if (!isRunning && detik == 0) return;
         lapCount++;
         int cs   =  detik % 100;
         int secs = (detik / 100) % 60;
         int mins = (detik / 100) / 60;
-        QString teks = QString("Lap %1    %2:%3.%4")
-                           .arg(lapCount,  2, 10, QChar('0'))
-                           .arg(mins,      2, 10, QChar('0'))
-                           .arg(secs,      2, 10, QChar('0'))
-                           .arg(cs,        2, 10, QChar('0'));
+        QString teks = QString("Lap %1    %2:%3.%4").arg(lapCount,2,10,QChar('0')).arg(mins,2,10,QChar('0')).arg(secs,2,10,QChar('0')).arg(cs,2,10,QChar('0'));
         ui->listLap->addItem(teks);
         ui->listLap->scrollToBottom();
     });
 
     // ══════════════════════════════════════════════
-    //  TIMER
+    //  TIMER INITIALIZATION
     // ══════════════════════════════════════════════
     countdownTimer = new QTimer(this);
     countdownTimer->setInterval(1000);
@@ -194,7 +151,6 @@ MainWindow::MainWindow(QWidget *parent)
         ui->labelTimerRemaining->setText("remaining");
     });
 
-    // Preset
     auto setPreset = [=](int menit) {
         countdownTimer->stop();
         isTimerRunning = false;
@@ -212,10 +168,25 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->btnPreset30, &QPushButton::clicked, this, [=]() { setPreset(30); });
 
     // ══════════════════════════════════════════════
-    //  ALARM
+    //  ALARM INITIALIZATION
     // ══════════════════════════════════════════════
     connect(ui->btnAddAlarm,    &QPushButton::clicked, this, &MainWindow::addAlarm);
     connect(ui->btnDeleteAlarm, &QPushButton::clicked, this, &MainWindow::deleteAlarm);
+
+    // Data Dummy Bawaan Aplikasi (Sesuai Gambar Mockup Anda)
+    QListWidgetItem *item1 = new QListWidgetItem(ui->listAlarm);
+    AlarmCardWidget *card1 = new AlarmCardWidget("07:00:00", "Senin, Selasa, Rabu, Kamis, Jumat", true, this);
+    item1->setSizeHint(card1->sizeHint());
+    ui->listAlarm->addItem(item1);
+    ui->listAlarm->setItemWidget(item1, card1);
+    connect(card1, &AlarmCardWidget::deletePressed, [=]() { delete item1; });
+
+    QListWidgetItem *item2 = new QListWidgetItem(ui->listAlarm);
+    AlarmCardWidget *card2 = new AlarmCardWidget("12:30:00", "Sabtu, Minggu", false, this);
+    item2->setSizeHint(card2->sizeHint());
+    ui->listAlarm->addItem(item2);
+    ui->listAlarm->setItemWidget(item2, card2);
+    connect(card2, &AlarmCardWidget::deletePressed, [=]() { delete item2; });
 
     alarmTimer = new QTimer(this);
     alarmTimer->setInterval(1000);
@@ -223,21 +194,15 @@ MainWindow::MainWindow(QWidget *parent)
     connect(alarmTimer, &QTimer::timeout, this, &MainWindow::checkAlarm);
 }
 
-// ── Stopwatch tick ──
 void MainWindow::updateWaktu()
 {
     detik++;
     int cs   =  detik % 100;
     int secs = (detik / 100) % 60;
     int mins = (detik / 100) / 60;
-    ui->labelStopwatch->setText(
-        QString("%1:%2.%3")
-            .arg(mins, 2, 10, QChar('0'))
-            .arg(secs, 2, 10, QChar('0'))
-            .arg(cs,   2, 10, QChar('0')));
+    ui->labelStopwatch->setText(QString("%1:%2.%3").arg(mins, 2, 10, QChar('0')).arg(secs, 2, 10, QChar('0')).arg(cs, 2, 10, QChar('0')));
 }
 
-// ── Timer countdown ──
 void MainWindow::updateTimer()
 {
     if (sisaDetik > 0) {
@@ -255,19 +220,46 @@ void MainWindow::updateTimer()
     }
 }
 
-// ── Alarm ──
 void MainWindow::addAlarm()
 {
     QTime waktu = ui->timeEditAlarm->time();
-    ui->listAlarm->addItem(waktu.toString("HH:mm:ss"));
+    QString timeStr = waktu.toString("HH:mm:ss");
+
+    // Default hari ketika user menekan tombol tambah alarm baru
+    QString daysStr = "Senin, Selasa, Rabu";
+
+    QListWidgetItem *item = new QListWidgetItem(ui->listAlarm);
+    AlarmCardWidget *card = new AlarmCardWidget(timeStr, daysStr, true, this);
+
+    item->setSizeHint(card->sizeHint());
+    ui->listAlarm->addItem(item);
+    ui->listAlarm->setItemWidget(item, card);
+
+    connect(card, &AlarmCardWidget::deletePressed, [=]() {
+        delete item;
+    });
 }
 
 void MainWindow::checkAlarm()
 {
-    QString sekarang = QTime::currentTime().toString("HH:mm:ss");
+    QString sekarangWaktu = QTime::currentTime().toString("HH:mm:ss");
+
+    // Ambil nama hari sistem aktual Windows dalam format Bahasa Indonesia
+    QLocale localeId(QLocale::Indonesian);
+    QString sekarangHari = localeId.toString(QDate::currentDate(), "dddd"); // Contoh output: "Senin", "Selasa"
+
     for (int i = 0; i < ui->listAlarm->count(); i++) {
-        if (ui->listAlarm->item(i)->text() == sekarang) {
-            QMessageBox::information(this, "Alarm", "WAKTU SUDAH TIBA!");
+        QListWidgetItem *item = ui->listAlarm->item(i);
+        AlarmCardWidget *card = qobject_cast<AlarmCardWidget*>(ui->listAlarm->itemWidget(item));
+
+        if (card) {
+            // Alarm berbunyi jika: Jam cocok AND Toggle Switch aktif (ON) AND List hari mengandung hari ini
+            if (card->getTimeText() == sekarangWaktu &&
+                card->isAlarmActive() &&
+                card->getDaysText().contains(sekarangHari, Qt::CaseInsensitive))
+            {
+                QMessageBox::information(this, "Alarm", "WAKTU SUDAH TIBA PADA HARI " + sekarangHari.toUpper() + "!");
+            }
         }
     }
 }

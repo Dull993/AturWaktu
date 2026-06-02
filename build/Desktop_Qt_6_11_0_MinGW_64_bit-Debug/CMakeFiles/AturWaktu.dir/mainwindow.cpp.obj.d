@@ -455,4 +455,20 @@ CMakeFiles/AturWaktu.dir/mainwindow.cpp.obj: \
  D:/Qt/6.11.0/mingw_64/include/QtWidgets/QMessageBox \
  D:/Qt/6.11.0/mingw_64/include/QtWidgets/qmessagebox.h \
  D:/Qt/6.11.0/mingw_64/include/QtWidgets/qdialog.h \
- D:/Qt/6.11.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
+ C:\Users\Lenovo\Desktop\bljrgit\AturWaktu\alarmcardwidget.h \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/QWidget \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/QFrame \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/QPushButton \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/QHBoxLayout \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/QVBoxLayout \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/QGraphicsDropShadowEffect \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/qgraphicseffect.h \
+ C:\Users\Lenovo\Desktop\bljrgit\AturWaktu\toggleswitch.h \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/QCheckBox \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/qcheckbox.h \
+ D:/Qt/6.11.0/mingw_64/include/QtGui/QPainter \
+ D:/Qt/6.11.0/mingw_64/include/QtGui/qpainter.h \
+ D:/Qt/6.11.0/mingw_64/include/QtGui/qtextoption.h \
+ D:/Qt/6.11.0/mingw_64/include/QtGui/qpen.h

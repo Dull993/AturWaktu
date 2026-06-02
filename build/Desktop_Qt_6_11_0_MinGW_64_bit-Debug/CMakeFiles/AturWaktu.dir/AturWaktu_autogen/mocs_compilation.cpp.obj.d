@@ -1,9 +1,9 @@
 CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.obj: \
  C:\Users\Lenovo\Desktop\bljrgit\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AturWaktu_autogen\mocs_compilation.cpp \
- C:\Users\Lenovo\Desktop\bljrgit\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AturWaktu_autogen\EWIEGA46WW/moc_mainwindow.cpp \
- C:/Users/Lenovo/Desktop/bljrgit/AturWaktu/mainwindow.h \
- D:/Qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
- D:/Qt/6.11.0/mingw_64/include/QtWidgets/qmainwindow.h \
+ C:\Users\Lenovo\Desktop\bljrgit\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AturWaktu_autogen\EWIEGA46WW/moc_alarmcardwidget.cpp \
+ C:/Users/Lenovo/Desktop/bljrgit/AturWaktu/alarmcardwidget.h \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/QWidget \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/qwidget.h \
  D:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
  D:/Qt/6.11.0/mingw_64/include/QtGui/qtguiglobal.h \
  D:/Qt/6.11.0/mingw_64/include/QtCore/qglobal.h \
@@ -157,7 +157,6 @@ CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.obj: \
  D:/Qt/6.11.0/mingw_64/include/QtGui/qtguiexports.h \
  D:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
  D:/Qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
- D:/Qt/6.11.0/mingw_64/include/QtWidgets/qwidget.h \
  D:/Qt/6.11.0/mingw_64/include/QtGui/qwindowdefs.h \
  D:/Qt/6.11.0/mingw_64/include/QtCore/qobjectdefs.h \
  D:/Qt/6.11.0/mingw_64/include/QtCore/qnamespace.h \
@@ -386,6 +385,41 @@ CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.obj: \
  D:/Qt/6.11.0/mingw_64/include/QtWidgets/qsizepolicy.h \
  D:/Qt/6.11.0/mingw_64/include/QtGui/qcursor.h \
  D:/Qt/6.11.0/mingw_64/include/QtGui/qbitmap.h \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/QFrame \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/qframe.h \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/qlabel.h \
+ D:/Qt/6.11.0/mingw_64/include/QtGui/qpicture.h \
+ D:/Qt/6.11.0/mingw_64/include/QtCore/qiodevice.h \
+ D:/Qt/6.11.0/mingw_64/include/QtGui/qtextdocument.h \
+ D:/Qt/6.11.0/mingw_64/include/QtCore/qurl.h \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/QPushButton \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/qpushbutton.h \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/QHBoxLayout \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/qboxlayout.h \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/qlayout.h \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/qlayoutitem.h \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/qgridlayout.h \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/QVBoxLayout \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/QGraphicsDropShadowEffect \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/qgraphicseffect.h \
+ C:/Users/Lenovo/Desktop/bljrgit/AturWaktu/toggleswitch.h \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/QCheckBox \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/qcheckbox.h \
+ D:/Qt/6.11.0/mingw_64/include/QtGui/QPainter \
+ D:/Qt/6.11.0/mingw_64/include/QtGui/qpainter.h \
+ D:/Qt/6.11.0/mingw_64/include/QtGui/qtextoption.h \
+ D:/Qt/6.11.0/mingw_64/include/QtGui/qpen.h \
+ D:/Qt/6.11.0/mingw_64/include/QtGui/qtextcursor.h \
+ D:/Qt/6.11.0/mingw_64/include/QtGui/qtextformat.h \
+ D:/Qt/6.11.0/mingw_64/include/QtCore/qtmochelpers.h \
+ D:/Qt/6.11.0/mingw_64/include/QtCore/qtmocconstants.h \
+ D:/Qt/6.11.0/mingw_64/include/QtCore/q20algorithm.h \
+ C:\Users\Lenovo\Desktop\bljrgit\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AturWaktu_autogen\EWIEGA46WW/moc_mainwindow.cpp \
+ C:/Users/Lenovo/Desktop/bljrgit/AturWaktu/mainwindow.h \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
+ D:/Qt/6.11.0/mingw_64/include/QtWidgets/qmainwindow.h \
  D:/Qt/6.11.0/mingw_64/include/QtWidgets/qtabwidget.h \
  D:/Qt/6.11.0/mingw_64/include/QtCore/QTimer \
  D:/Qt/6.11.0/mingw_64/include/QtCore/qtimer.h \
@@ -393,6 +427,5 @@ CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.obj: \
  D:/Qt/6.11.0/mingw_64/include/QtCore/qabstracteventdispatcher.h \
  D:/Qt/6.11.0/mingw_64/include/QtCore/qeventloop.h \
  D:/Qt/6.11.0/mingw_64/include/QtCore/qdeadlinetimer.h \
- D:/Qt/6.11.0/mingw_64/include/QtCore/qtmochelpers.h \
- D:/Qt/6.11.0/mingw_64/include/QtCore/qtmocconstants.h \
- D:/Qt/6.11.0/mingw_64/include/QtCore/q20algorithm.h
+ C:\Users\Lenovo\Desktop\bljrgit\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AturWaktu_autogen\EWIEGA46WW/moc_toggleswitch.cpp \
+ C:/Users/Lenovo/Desktop/bljrgit/AturWaktu/toggleswitch.h
