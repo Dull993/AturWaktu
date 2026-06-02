@@ -1,3 +1,3 @@
-D:\qt\Tools\CMake_64\bin\cmake.exe -E rm -f CMakeFiles\AturWaktu.dir/objects.a
-D:\qt\Tools\mingw1310_64\bin\ar.exe qc CMakeFiles\AturWaktu.dir/objects.a @CMakeFiles\AturWaktu.dir\objects1.rsp
-D:\qt\Tools\mingw1310_64\bin\g++.exe -g -mwindows -Wl,--whole-archive CMakeFiles\AturWaktu.dir/objects.a -Wl,--no-whole-archive -o AturWaktu.exe -Wl,--out-implib,libAturWaktu.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\AturWaktu.dir\linkLibs.rsp
+D:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f CMakeFiles\AturWaktu.dir/objects.a
+D:\Qt\Tools\mingw1310_64\bin\ar.exe qc CMakeFiles\AturWaktu.dir/objects.a @CMakeFiles\AturWaktu.dir\objects1.rsp
+D:\Qt\Tools\mingw1310_64\bin\g++.exe -g -mwindows -Wl,--whole-archive CMakeFiles\AturWaktu.dir/objects.a -Wl,--no-whole-archive -o AturWaktu.exe -Wl,--out-implib,libAturWaktu.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\AturWaktu.dir\linkLibs.rsp

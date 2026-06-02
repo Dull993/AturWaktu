@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = D:\qt\Tools\CMake_64\bin\cmake.exe
+CMAKE_COMMAND = D:\Qt\Tools\CMake_64\bin\cmake.exe
 
 # The command to remove a file.
-RM = D:\qt\Tools\CMake_64\bin\cmake.exe -E rm -f
+RM = D:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\AturWaktu\AturWaktu
+CMAKE_SOURCE_DIR = C:\Users\Lenovo\Desktop\bljrgit\AturWaktu
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\AturWaktu\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug
+CMAKE_BINARY_DIR = C:\Users\Lenovo\Desktop\bljrgit\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/AturWaktu.dir/depend.make
@@ -68,57 +68,57 @@ include CMakeFiles/AturWaktu.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/AturWaktu.dir/flags.make
 
-AturWaktu_autogen/timestamp: D:/qt/6.11.0/mingw_64/bin/moc.exe
-AturWaktu_autogen/timestamp: D:/qt/6.11.0/mingw_64/bin/uic.exe
+AturWaktu_autogen/timestamp: D:/Qt/6.11.0/mingw_64/bin/moc.exe
+AturWaktu_autogen/timestamp: D:/Qt/6.11.0/mingw_64/bin/uic.exe
 AturWaktu_autogen/timestamp: CMakeFiles/AturWaktu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=D:\AturWaktu\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target AturWaktu"
-	D:\qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen D:/AturWaktu/AturWaktu/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/AturWaktu_autogen.dir/AutogenInfo.json Debug
-	D:\qt\Tools\CMake_64\bin\cmake.exe -E touch D:/AturWaktu/AturWaktu/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/AturWaktu_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\Lenovo\Desktop\bljrgit\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target AturWaktu"
+	D:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen C:/Users/Lenovo/Desktop/bljrgit/AturWaktu/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/AturWaktu_autogen.dir/AutogenInfo.json Debug
+	D:\Qt\Tools\CMake_64\bin\cmake.exe -E touch C:/Users/Lenovo/Desktop/bljrgit/AturWaktu/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/AturWaktu_autogen/timestamp
 
 CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.obj: CMakeFiles/AturWaktu.dir/flags.make
 CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.obj: CMakeFiles/AturWaktu.dir/includes_CXX.rsp
 CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.obj: AturWaktu_autogen/mocs_compilation.cpp
 CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.obj: CMakeFiles/AturWaktu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\AturWaktu\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.obj"
-	D:\qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\AturWaktu.dir\AturWaktu_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\AturWaktu.dir\AturWaktu_autogen\mocs_compilation.cpp.obj -c D:\AturWaktu\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AturWaktu_autogen\mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Lenovo\Desktop\bljrgit\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.obj"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\AturWaktu.dir\AturWaktu_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\AturWaktu.dir\AturWaktu_autogen\mocs_compilation.cpp.obj -c C:\Users\Lenovo\Desktop\bljrgit\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AturWaktu_autogen\mocs_compilation.cpp
 
 CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.i"
-	D:\qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\AturWaktu\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AturWaktu_autogen\mocs_compilation.cpp > CMakeFiles\AturWaktu.dir\AturWaktu_autogen\mocs_compilation.cpp.i
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Lenovo\Desktop\bljrgit\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AturWaktu_autogen\mocs_compilation.cpp > CMakeFiles\AturWaktu.dir\AturWaktu_autogen\mocs_compilation.cpp.i
 
 CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.s"
-	D:\qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\AturWaktu\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AturWaktu_autogen\mocs_compilation.cpp -o CMakeFiles\AturWaktu.dir\AturWaktu_autogen\mocs_compilation.cpp.s
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Lenovo\Desktop\bljrgit\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AturWaktu_autogen\mocs_compilation.cpp -o CMakeFiles\AturWaktu.dir\AturWaktu_autogen\mocs_compilation.cpp.s
 
 CMakeFiles/AturWaktu.dir/main.cpp.obj: CMakeFiles/AturWaktu.dir/flags.make
 CMakeFiles/AturWaktu.dir/main.cpp.obj: CMakeFiles/AturWaktu.dir/includes_CXX.rsp
-CMakeFiles/AturWaktu.dir/main.cpp.obj: D:/AturWaktu/AturWaktu/main.cpp
+CMakeFiles/AturWaktu.dir/main.cpp.obj: C:/Users/Lenovo/Desktop/bljrgit/AturWaktu/main.cpp
 CMakeFiles/AturWaktu.dir/main.cpp.obj: CMakeFiles/AturWaktu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\AturWaktu\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/AturWaktu.dir/main.cpp.obj"
-	D:\qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AturWaktu.dir/main.cpp.obj -MF CMakeFiles\AturWaktu.dir\main.cpp.obj.d -o CMakeFiles\AturWaktu.dir\main.cpp.obj -c D:\AturWaktu\AturWaktu\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Lenovo\Desktop\bljrgit\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/AturWaktu.dir/main.cpp.obj"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AturWaktu.dir/main.cpp.obj -MF CMakeFiles\AturWaktu.dir\main.cpp.obj.d -o CMakeFiles\AturWaktu.dir\main.cpp.obj -c C:\Users\Lenovo\Desktop\bljrgit\AturWaktu\main.cpp
 
 CMakeFiles/AturWaktu.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AturWaktu.dir/main.cpp.i"
-	D:\qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\AturWaktu\AturWaktu\main.cpp > CMakeFiles\AturWaktu.dir\main.cpp.i
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Lenovo\Desktop\bljrgit\AturWaktu\main.cpp > CMakeFiles\AturWaktu.dir\main.cpp.i
 
 CMakeFiles/AturWaktu.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AturWaktu.dir/main.cpp.s"
-	D:\qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\AturWaktu\AturWaktu\main.cpp -o CMakeFiles\AturWaktu.dir\main.cpp.s
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Lenovo\Desktop\bljrgit\AturWaktu\main.cpp -o CMakeFiles\AturWaktu.dir\main.cpp.s
 
 CMakeFiles/AturWaktu.dir/mainwindow.cpp.obj: CMakeFiles/AturWaktu.dir/flags.make
 CMakeFiles/AturWaktu.dir/mainwindow.cpp.obj: CMakeFiles/AturWaktu.dir/includes_CXX.rsp
-CMakeFiles/AturWaktu.dir/mainwindow.cpp.obj: D:/AturWaktu/AturWaktu/mainwindow.cpp
+CMakeFiles/AturWaktu.dir/mainwindow.cpp.obj: C:/Users/Lenovo/Desktop/bljrgit/AturWaktu/mainwindow.cpp
 CMakeFiles/AturWaktu.dir/mainwindow.cpp.obj: CMakeFiles/AturWaktu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=D:\AturWaktu\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/AturWaktu.dir/mainwindow.cpp.obj"
-	D:\qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AturWaktu.dir/mainwindow.cpp.obj -MF CMakeFiles\AturWaktu.dir\mainwindow.cpp.obj.d -o CMakeFiles\AturWaktu.dir\mainwindow.cpp.obj -c D:\AturWaktu\AturWaktu\mainwindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Lenovo\Desktop\bljrgit\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/AturWaktu.dir/mainwindow.cpp.obj"
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AturWaktu.dir/mainwindow.cpp.obj -MF CMakeFiles\AturWaktu.dir\mainwindow.cpp.obj.d -o CMakeFiles\AturWaktu.dir\mainwindow.cpp.obj -c C:\Users\Lenovo\Desktop\bljrgit\AturWaktu\mainwindow.cpp
 
 CMakeFiles/AturWaktu.dir/mainwindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AturWaktu.dir/mainwindow.cpp.i"
-	D:\qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\AturWaktu\AturWaktu\mainwindow.cpp > CMakeFiles\AturWaktu.dir\mainwindow.cpp.i
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Lenovo\Desktop\bljrgit\AturWaktu\mainwindow.cpp > CMakeFiles\AturWaktu.dir\mainwindow.cpp.i
 
 CMakeFiles/AturWaktu.dir/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AturWaktu.dir/mainwindow.cpp.s"
-	D:\qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\AturWaktu\AturWaktu\mainwindow.cpp -o CMakeFiles\AturWaktu.dir\mainwindow.cpp.s
+	D:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Lenovo\Desktop\bljrgit\AturWaktu\mainwindow.cpp -o CMakeFiles\AturWaktu.dir\mainwindow.cpp.s
 
 # Object files for target AturWaktu
 AturWaktu_OBJECTS = \
@@ -133,14 +133,14 @@ AturWaktu.exe: CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.o
 AturWaktu.exe: CMakeFiles/AturWaktu.dir/main.cpp.obj
 AturWaktu.exe: CMakeFiles/AturWaktu.dir/mainwindow.cpp.obj
 AturWaktu.exe: CMakeFiles/AturWaktu.dir/build.make
-AturWaktu.exe: D:/qt/6.11.0/mingw_64/lib/libQt6Widgets.a
-AturWaktu.exe: D:/qt/6.11.0/mingw_64/lib/libQt6Gui.a
-AturWaktu.exe: D:/qt/6.11.0/mingw_64/lib/libQt6Core.a
-AturWaktu.exe: D:/qt/6.11.0/mingw_64/lib/libQt6EntryPoint.a
+AturWaktu.exe: D:/Qt/6.11.0/mingw_64/lib/libQt6Widgets.a
+AturWaktu.exe: D:/Qt/6.11.0/mingw_64/lib/libQt6Gui.a
+AturWaktu.exe: D:/Qt/6.11.0/mingw_64/lib/libQt6Core.a
+AturWaktu.exe: D:/Qt/6.11.0/mingw_64/lib/libQt6EntryPoint.a
 AturWaktu.exe: CMakeFiles/AturWaktu.dir/linkLibs.rsp
 AturWaktu.exe: CMakeFiles/AturWaktu.dir/objects1.rsp
 AturWaktu.exe: CMakeFiles/AturWaktu.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=D:\AturWaktu\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable AturWaktu.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Lenovo\Desktop\bljrgit\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable AturWaktu.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\AturWaktu.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -152,6 +152,6 @@ CMakeFiles/AturWaktu.dir/clean:
 .PHONY : CMakeFiles/AturWaktu.dir/clean
 
 CMakeFiles/AturWaktu.dir/depend: AturWaktu_autogen/timestamp
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\AturWaktu\AturWaktu D:\AturWaktu\AturWaktu D:\AturWaktu\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug D:\AturWaktu\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug D:\AturWaktu\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles\AturWaktu.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Lenovo\Desktop\bljrgit\AturWaktu C:\Users\Lenovo\Desktop\bljrgit\AturWaktu C:\Users\Lenovo\Desktop\bljrgit\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug C:\Users\Lenovo\Desktop\bljrgit\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug C:\Users\Lenovo\Desktop\bljrgit\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles\AturWaktu.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/AturWaktu.dir/depend
 
