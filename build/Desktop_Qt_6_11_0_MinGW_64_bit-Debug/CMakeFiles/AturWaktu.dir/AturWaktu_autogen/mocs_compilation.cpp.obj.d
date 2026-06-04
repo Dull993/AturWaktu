@@ -1,9 +1,9 @@
 CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.obj: \
- D:\AturWaktu\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AturWaktu_autogen\mocs_compilation.cpp \
- D:\AturWaktu\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AturWaktu_autogen\EWIEGA46WW/moc_mainwindow.cpp \
- D:/AturWaktu/AturWaktu/mainwindow.h \
- D:/qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
- D:/qt/6.11.0/mingw_64/include/QtWidgets/qmainwindow.h \
+ C:\Users\torae\Downloads\AturWaktuV0.1-20260604T051701Z-3-001\AturWaktuV0.1\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AturWaktu_autogen\mocs_compilation.cpp \
+ C:\Users\torae\Downloads\AturWaktuV0.1-20260604T051701Z-3-001\AturWaktuV0.1\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AturWaktu_autogen\EWIEGA46WW/moc_alarmcardwidget.cpp \
+ C:/Users/torae/Downloads/AturWaktuV0.1-20260604T051701Z-3-001/AturWaktuV0.1/alarmcardwidget.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/QWidget \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qwidget.h \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
  D:/qt/6.11.0/mingw_64/include/QtGui/qtguiglobal.h \
  D:/qt/6.11.0/mingw_64/include/QtCore/qglobal.h \
@@ -157,7 +157,6 @@ CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.obj: \
  D:/qt/6.11.0/mingw_64/include/QtGui/qtguiexports.h \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
- D:/qt/6.11.0/mingw_64/include/QtWidgets/qwidget.h \
  D:/qt/6.11.0/mingw_64/include/QtGui/qwindowdefs.h \
  D:/qt/6.11.0/mingw_64/include/QtCore/qobjectdefs.h \
  D:/qt/6.11.0/mingw_64/include/QtCore/qnamespace.h \
@@ -386,13 +385,70 @@ CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.obj: \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qsizepolicy.h \
  D:/qt/6.11.0/mingw_64/include/QtGui/qcursor.h \
  D:/qt/6.11.0/mingw_64/include/QtGui/qbitmap.h \
- D:/qt/6.11.0/mingw_64/include/QtWidgets/qtabwidget.h \
- D:/qt/6.11.0/mingw_64/include/QtCore/QTimer \
- D:/qt/6.11.0/mingw_64/include/QtCore/qtimer.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/QFrame \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qframe.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qlabel.h \
+ D:/qt/6.11.0/mingw_64/include/QtGui/qpicture.h \
+ D:/qt/6.11.0/mingw_64/include/QtCore/qiodevice.h \
+ D:/qt/6.11.0/mingw_64/include/QtGui/qtextdocument.h \
+ D:/qt/6.11.0/mingw_64/include/QtCore/qurl.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/QPushButton \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qpushbutton.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractbutton.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/QHBoxLayout \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qboxlayout.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qlayout.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qlayoutitem.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qgridlayout.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/QVBoxLayout \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/QGraphicsDropShadowEffect \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qgraphicseffect.h \
+ C:/Users/torae/Downloads/AturWaktuV0.1-20260604T051701Z-3-001/AturWaktuV0.1/toggleswitch.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/QCheckBox \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qcheckbox.h \
+ D:/qt/6.11.0/mingw_64/include/QtGui/QPainter \
+ D:/qt/6.11.0/mingw_64/include/QtGui/qpainter.h \
+ D:/qt/6.11.0/mingw_64/include/QtGui/qtextoption.h \
+ D:/qt/6.11.0/mingw_64/include/QtGui/qpen.h \
+ D:/qt/6.11.0/mingw_64/include/QtGui/QMouseEvent \
+ D:/qt/6.11.0/mingw_64/include/QtGui/qevent.h \
+ D:/qt/6.11.0/mingw_64/include/QtCore/qcoreevent.h \
  D:/qt/6.11.0/mingw_64/include/QtCore/qbasictimer.h \
  D:/qt/6.11.0/mingw_64/include/QtCore/qabstracteventdispatcher.h \
  D:/qt/6.11.0/mingw_64/include/QtCore/qeventloop.h \
  D:/qt/6.11.0/mingw_64/include/QtCore/qdeadlinetimer.h \
+ D:/qt/6.11.0/mingw_64/include/QtGui/qeventpoint.h \
+ D:/qt/6.11.0/mingw_64/include/QtGui/qvector2d.h \
+ D:/qt/6.11.0/mingw_64/include/QtGui/qvectornd.h \
+ D:/qt/6.11.0/mingw_64/include/QtGui/qpointingdevice.h \
+ D:/qt/6.11.0/mingw_64/include/QtGui/qinputdevice.h \
+ D:/qt/6.11.0/mingw_64/include/QtGui/qscreen.h \
+ D:/qt/6.11.0/mingw_64/include/QtCore/QList \
+ D:/qt/6.11.0/mingw_64/include/QtCore/QObject \
+ D:/qt/6.11.0/mingw_64/include/QtCore/QRect \
+ D:/qt/6.11.0/mingw_64/include/QtCore/QSize \
+ D:/qt/6.11.0/mingw_64/include/QtCore/QSizeF \
+ D:/qt/6.11.0/mingw_64/include/QtGui/QTransform \
+ D:/qt/6.11.0/mingw_64/include/QtCore/qnativeinterface.h \
+ D:/qt/6.11.0/mingw_64/include/QtGui/qscreen_platform.h \
+ D:/qt/6.11.0/mingw_64/include/QtGui/qguiapplication.h \
+ D:/qt/6.11.0/mingw_64/include/QtCore/qcoreapplication.h \
+ D:/qt/6.11.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
+ D:/qt/6.11.0/mingw_64/include/QtGui/qinputmethod.h \
+ D:/qt/6.11.0/mingw_64/include/QtCore/qlocale.h \
+ D:/qt/6.11.0/mingw_64/include/QtGui/qguiapplication_platform.h \
+ D:/qt/6.11.0/mingw_64/include/QtGui/qtextcursor.h \
+ D:/qt/6.11.0/mingw_64/include/QtGui/qtextformat.h \
  D:/qt/6.11.0/mingw_64/include/QtCore/qtmochelpers.h \
  D:/qt/6.11.0/mingw_64/include/QtCore/qtmocconstants.h \
- D:/qt/6.11.0/mingw_64/include/QtCore/q20algorithm.h
+ D:/qt/6.11.0/mingw_64/include/QtCore/q20algorithm.h \
+ C:\Users\torae\Downloads\AturWaktuV0.1-20260604T051701Z-3-001\AturWaktuV0.1\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AturWaktu_autogen\EWIEGA46WW/moc_mainwindow.cpp \
+ C:/Users/torae/Downloads/AturWaktuV0.1-20260604T051701Z-3-001/AturWaktuV0.1/mainwindow.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qmainwindow.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qtabwidget.h \
+ D:/qt/6.11.0/mingw_64/include/QtCore/QTimer \
+ D:/qt/6.11.0/mingw_64/include/QtCore/qtimer.h \
+ C:\Users\torae\Downloads\AturWaktuV0.1-20260604T051701Z-3-001\AturWaktuV0.1\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AturWaktu_autogen\EWIEGA46WW/moc_toggleswitch.cpp \
+ C:/Users/torae/Downloads/AturWaktuV0.1-20260604T051701Z-3-001/AturWaktuV0.1/toggleswitch.h

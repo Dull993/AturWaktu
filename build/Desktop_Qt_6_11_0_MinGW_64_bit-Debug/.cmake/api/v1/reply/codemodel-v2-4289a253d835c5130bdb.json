@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-4f3efac69da27c1f8894.json",
+					"jsonFile" : "directory-.-Debug-76e368c58c3364770925.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "AturWaktu::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-AturWaktu-Debug-5611c3f30eafec8ab13a.json",
+					"jsonFile" : "target-AturWaktu-Debug-e8f424112b2b7de1d3b5.json",
 					"name" : "AturWaktu",
 					"projectIndex" : 0
 				},
@@ -68,8 +68,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/AturWaktu/AturWaktu/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug",
-		"source" : "D:/AturWaktu/AturWaktu"
+		"build" : "C:/Users/torae/Downloads/AturWaktuV0.1-20260604T051701Z-3-001/AturWaktuV0.1/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug",
+		"source" : "C:/Users/torae/Downloads/AturWaktuV0.1-20260604T051701Z-3-001/AturWaktuV0.1"
 	},
 	"version" : 
 	{

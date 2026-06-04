@@ -52,10 +52,10 @@ RM = D:\qt\Tools\CMake_64\bin\cmake.exe -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\AturWaktu\AturWaktu
+CMAKE_SOURCE_DIR = C:\Users\torae\Downloads\AturWaktuV0.1-20260604T051701Z-3-001\AturWaktuV0.1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\AturWaktu\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug
+CMAKE_BINARY_DIR = C:\Users\torae\Downloads\AturWaktuV0.1-20260604T051701Z-3-001\AturWaktuV0.1\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug
 
 # Utility rule file for AturWaktu_autogen_timestamp_deps.
 
@@ -77,6 +77,6 @@ CMakeFiles/AturWaktu_autogen_timestamp_deps.dir/clean:
 .PHONY : CMakeFiles/AturWaktu_autogen_timestamp_deps.dir/clean
 
 CMakeFiles/AturWaktu_autogen_timestamp_deps.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\AturWaktu\AturWaktu D:\AturWaktu\AturWaktu D:\AturWaktu\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug D:\AturWaktu\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug D:\AturWaktu\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles\AturWaktu_autogen_timestamp_deps.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\torae\Downloads\AturWaktuV0.1-20260604T051701Z-3-001\AturWaktuV0.1 C:\Users\torae\Downloads\AturWaktuV0.1-20260604T051701Z-3-001\AturWaktuV0.1 C:\Users\torae\Downloads\AturWaktuV0.1-20260604T051701Z-3-001\AturWaktuV0.1\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug C:\Users\torae\Downloads\AturWaktuV0.1-20260604T051701Z-3-001\AturWaktuV0.1\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug C:\Users\torae\Downloads\AturWaktuV0.1-20260604T051701Z-3-001\AturWaktuV0.1\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles\AturWaktu_autogen_timestamp_deps.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/AturWaktu_autogen_timestamp_deps.dir/depend
 

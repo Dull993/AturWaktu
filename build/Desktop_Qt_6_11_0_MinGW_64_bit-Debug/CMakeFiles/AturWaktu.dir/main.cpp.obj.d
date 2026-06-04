@@ -1,5 +1,6 @@
-CMakeFiles/AturWaktu.dir/main.cpp.obj: D:\AturWaktu\AturWaktu\main.cpp \
- D:\AturWaktu\AturWaktu\mainwindow.h \
+CMakeFiles/AturWaktu.dir/main.cpp.obj: \
+ C:\Users\torae\Downloads\AturWaktuV0.1-20260604T051701Z-3-001\AturWaktuV0.1\main.cpp \
+ C:\Users\torae\Downloads\AturWaktuV0.1-20260604T051701Z-3-001\AturWaktuV0.1\mainwindow.h \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qmainwindow.h \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \

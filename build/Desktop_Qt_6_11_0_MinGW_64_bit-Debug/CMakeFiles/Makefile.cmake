@@ -7,7 +7,7 @@ set(CMAKE_DEPENDS_GENERATOR "MinGW Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "D:/AturWaktu/AturWaktu/CMakeLists.txt"
+  "C:/Users/torae/Downloads/AturWaktuV0.1-20260604T051701Z-3-001/AturWaktuV0.1/CMakeLists.txt"
   ".qtcreator/cmake-helper/maintenance_tool_provider.cmake"
   ".qtcreator/cmake-helper/package-manager.cmake"
   ".qtcreator/cmake-helper/qtcreator-project.cmake"

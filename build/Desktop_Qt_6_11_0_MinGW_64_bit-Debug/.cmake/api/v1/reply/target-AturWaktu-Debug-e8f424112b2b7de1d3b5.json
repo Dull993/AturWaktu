@@ -25,7 +25,8 @@
 			"find_dependency",
 			"_qt_internal_find_qt_dependencies",
 			"add_compile_definitions",
-			"project"
+			"project",
+			"include_directories"
 		],
 		"files" : 
 		[
@@ -54,7 +55,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 23,
+				"line" : 26,
 				"parent" : 0
 			},
 			{
@@ -78,13 +79,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 62,
+				"line" : 39,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 45,
+				"line" : 31,
 				"parent" : 0
 			},
 			{
@@ -292,6 +293,12 @@
 				"file" : 15,
 				"line" : 81,
 				"parent" : 43
+			},
+			{
+				"command" : 13,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 0
 			}
 		]
 	},
@@ -359,7 +366,11 @@
 			[
 				{
 					"backtrace" : 0,
-					"path" : "D:/AturWaktu/AturWaktu/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/AturWaktu_autogen/include"
+					"path" : "C:/Users/torae/Downloads/AturWaktuV0.1-20260604T051701Z-3-001/AturWaktuV0.1/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/AturWaktu_autogen/include"
+				},
+				{
+					"backtrace" : 45,
+					"path" : "C:/Users/torae/Downloads/AturWaktuV0.1-20260604T051701Z-3-001/AturWaktuV0.1/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug"
 				},
 				{
 					"backtrace" : 13,
@@ -532,7 +543,9 @@
 			"sourceIndexes" : 
 			[
 				3,
-				5
+				5,
+				6,
+				7
 			]
 		},
 		{
@@ -546,14 +559,14 @@
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				6
+				8
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				7
+				9
 			]
 		}
 	],
@@ -587,6 +600,16 @@
 			"backtrace" : 4,
 			"path" : "mainwindow.ui",
 			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 4,
+			"path" : "toggleswitch.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "alarmcardwidget.h",
+			"sourceGroupIndex" : 1
 		},
 		{
 			"backtrace" : 0,
