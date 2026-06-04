@@ -59,6 +59,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->btnStartSW->setStyleSheet(gradientPrimaryStyle);
     ui->btnStartTimer->setStyleSheet(gradientPrimaryStyle);
     ui->btnAddAlarm->setStyleSheet(gradientPrimaryStyle);
+    ui->btnEditAlarm->setStyleSheet(gradientPrimaryStyle);
 
 
     ui->btnLapSW->setStyleSheet("background-color: #fff0f6; color: #fa73a6; border: 1px solid #fac0d5; border-radius: 10px; padding: 10px 20px; font-weight: bold;");
@@ -76,8 +77,35 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->listAlarm->setStyleSheet("QListWidget { background-color: transparent; border: none; } QListWidget::item { background-color: transparent; } QListWidget::item:selected { background-color: transparent; }");
     ui->listLap->setStyleSheet("QListWidget { background-color: #ffffff; border: 1px solid #e0ddf0; border-radius: 12px; padding: 4px; color: #14121e; } QListWidget::item { padding: 6px 10px; border-radius: 8px; } QListWidget::item:selected { background-color: #fff0f6; color: #fa73a6; } QListWidget::item:hover { background-color: #f3f0fb; }");
+    ui->dateEditAlarm->setStyleSheet(
+        "QDateEdit {"
+        "   background-color: white;"
+        "   border: 2px solid #d9c8ff;"
+        "   border-radius: 14px;"
+        "   padding: 8px;"
+        "   color: #5d4db3;"
+        "   font-size: 16px;"
+        "   font-weight: 600;"
+        "}"
+        "QDateEdit:focus {"
+        "   border: 2px solid #8c73f2;"
+        "}"
+        );
 
-
+    ui->timeEditAlarm->setStyleSheet(
+        "QTimeEdit {"
+        "   background-color: white;"
+        "   border: 2px solid #d9c8ff;"
+        "   border-radius: 14px;"
+        "   padding: 8px;"
+        "   color: #5d4db3;"
+        "   font-size: 28px;"
+        "   font-weight: bold;"
+        "}"
+        "QTimeEdit:focus {"
+        "   border: 2px solid #8c73f2;"
+        "}"
+        );
 
 
     timer = new QTimer(this);
@@ -192,6 +220,25 @@ MainWindow::MainWindow(QWidget *parent)
     alarmTimer->setInterval(1000);
     alarmTimer->start();
     connect(alarmTimer, &QTimer::timeout, this, &MainWindow::checkAlarm);
+    connect(ui->listAlarm,
+            &QListWidget::itemClicked,
+            this,
+            [=](QListWidgetItem *item)
+            {
+                selectedAlarmItem = item;
+
+                AlarmCardWidget *card =
+                    qobject_cast<AlarmCardWidget*>(
+                        ui->listAlarm->itemWidget(item));
+
+                if(card)
+                {
+                    ui->timeEditAlarm->setTime(
+                        QTime::fromString(
+                            card->getTimeText(),
+                            "HH:mm:ss"));
+                }
+            });
 
 
 }
@@ -228,19 +275,32 @@ void MainWindow::addAlarm()
     QTime waktu = ui->timeEditAlarm->time();
     QString timeStr = waktu.toString("HH:mm:ss");
 
+    QDate tanggal = ui->dateEditAlarm->date();
+    QString dateStr = tanggal.toString("dd/MM/yyyy");
 
-    QString daysStr = "Senin, Selasa, Rabu";
+    QString daysStr = "📅 " + dateStr;
 
-    QListWidgetItem *item = new QListWidgetItem(ui->listAlarm);
-    AlarmCardWidget *card = new AlarmCardWidget(timeStr, daysStr, true, this);
+    QListWidgetItem *item =
+        new QListWidgetItem(ui->listAlarm);
+
+    AlarmCardWidget *card =
+        new AlarmCardWidget(
+            timeStr,
+            daysStr,
+            true,
+            this);
 
     item->setSizeHint(card->sizeHint());
+
     ui->listAlarm->addItem(item);
     ui->listAlarm->setItemWidget(item, card);
 
-    connect(card, &AlarmCardWidget::deletePressed, [=]() {
-        delete item;
-    });
+    connect(card,
+            &AlarmCardWidget::deletePressed,
+            [=]()
+            {
+                delete item;
+            });
 }
 
 void MainWindow::checkAlarm()
@@ -315,7 +375,7 @@ void MainWindow::deleteAlarm()
 void MainWindow::editAlarm()
 {
     QListWidgetItem *item =
-        ui->listAlarm->currentItem();
+        selectedAlarmItem;
 
     if (!item)
     {

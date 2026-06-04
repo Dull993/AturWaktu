@@ -391,6 +391,25 @@ CMakeFiles/AturWaktu.dir/main.cpp.obj: C:\Users\torae\AturWaktu\main.cpp \
  D:/qt/6.11.0/mingw_64/include/QtCore/qabstracteventdispatcher.h \
  D:/qt/6.11.0/mingw_64/include/QtCore/qeventloop.h \
  D:/qt/6.11.0/mingw_64/include/QtCore/qdeadlinetimer.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/QListWidgetItem \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qlistwidget.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qlistview.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractitemview.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qframe.h \
+ D:/qt/6.11.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+ D:/qt/6.11.0/mingw_64/include/QtCore/qitemselectionmodel.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qstyleoption.h \
+ D:/qt/6.11.0/mingw_64/include/QtCore/qlocale.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+ D:/qt/6.11.0/mingw_64/include/QtGui/qvalidator.h \
+ D:/qt/6.11.0/mingw_64/include/QtCore/qregularexpression.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qslider.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractslider.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qstyle.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qtabbar.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qrubberband.h \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/QApplication \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qapplication.h \
  D:/qt/6.11.0/mingw_64/include/QtCore/qcoreapplication.h \
@@ -399,5 +418,4 @@ CMakeFiles/AturWaktu.dir/main.cpp.obj: C:\Users\torae\AturWaktu\main.cpp \
  D:/qt/6.11.0/mingw_64/include/QtCore/qcoreapplication_platform.h \
  D:/qt/6.11.0/mingw_64/include/QtGui/qguiapplication.h \
  D:/qt/6.11.0/mingw_64/include/QtGui/qinputmethod.h \
- D:/qt/6.11.0/mingw_64/include/QtCore/qlocale.h \
  D:/qt/6.11.0/mingw_64/include/QtGui/qguiapplication_platform.h

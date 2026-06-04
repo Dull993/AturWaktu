@@ -450,5 +450,22 @@ CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.obj: \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qtabwidget.h \
  D:/qt/6.11.0/mingw_64/include/QtCore/QTimer \
  D:/qt/6.11.0/mingw_64/include/QtCore/qtimer.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/QListWidgetItem \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qlistwidget.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qlistview.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractitemview.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+ D:/qt/6.11.0/mingw_64/include/QtCore/qabstractitemmodel.h \
+ D:/qt/6.11.0/mingw_64/include/QtCore/qitemselectionmodel.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qstyleoption.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+ D:/qt/6.11.0/mingw_64/include/QtGui/qvalidator.h \
+ D:/qt/6.11.0/mingw_64/include/QtCore/qregularexpression.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qslider.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractslider.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qstyle.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qtabbar.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qrubberband.h \
  C:\Users\torae\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AturWaktu_autogen\EWIEGA46WW/moc_toggleswitch.cpp \
  C:/Users/torae/AturWaktu/toggleswitch.h

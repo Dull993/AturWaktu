@@ -3,7 +3,7 @@
 
 #include <QMainWindow>
 #include <QTimer>
-
+#include <QListWidgetItem>
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -42,6 +42,7 @@ private:
 
     // Alarm
     QTimer *alarmTimer;
+    QListWidgetItem *selectedAlarmItem = nullptr;
 };
 
 #endif // MAINWINDOW_H
