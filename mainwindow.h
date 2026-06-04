@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QTimer>
 #include <QListWidgetItem>
+#include <QSet>
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -43,6 +44,7 @@ private:
     // Alarm
     QTimer *alarmTimer;
     QListWidgetItem *selectedAlarmItem = nullptr;
+    QSet<QString> alarmSudahBunyi;
 };
 
 #endif // MAINWINDOW_H

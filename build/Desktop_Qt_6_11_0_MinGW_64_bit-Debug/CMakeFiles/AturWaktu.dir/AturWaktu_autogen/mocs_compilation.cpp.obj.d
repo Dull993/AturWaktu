@@ -467,5 +467,6 @@ CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.obj: \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qstyle.h \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qtabbar.h \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qrubberband.h \
+ D:/qt/6.11.0/mingw_64/include/QtCore/QSet \
  C:\Users\torae\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AturWaktu_autogen\EWIEGA46WW/moc_toggleswitch.cpp \
  C:/Users/torae/AturWaktu/toggleswitch.h

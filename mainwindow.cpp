@@ -77,18 +77,20 @@ MainWindow::MainWindow(QWidget *parent)
 
     ui->listAlarm->setStyleSheet("QListWidget { background-color: transparent; border: none; } QListWidget::item { background-color: transparent; } QListWidget::item:selected { background-color: transparent; }");
     ui->listLap->setStyleSheet("QListWidget { background-color: #ffffff; border: 1px solid #e0ddf0; border-radius: 12px; padding: 4px; color: #14121e; } QListWidget::item { padding: 6px 10px; border-radius: 8px; } QListWidget::item:selected { background-color: #fff0f6; color: #fa73a6; } QListWidget::item:hover { background-color: #f3f0fb; }");
+
     ui->dateEditAlarm->setStyleSheet(
         "QDateEdit {"
         "   background-color: white;"
         "   border: 2px solid #d9c8ff;"
-        "   border-radius: 14px;"
-        "   padding: 8px;"
+        "   border-radius: 12px;"
+        "   padding: 4px 8px;"
         "   color: #5d4db3;"
         "   font-size: 16px;"
-        "   font-weight: 600;"
+        "   font-weight: bold;"
         "}"
-        "QDateEdit:focus {"
-        "   border: 2px solid #8c73f2;"
+        "QCalendarWidget QWidget {"
+        "   background-color: white;"
+        "   color: black;"
         "}"
         );
 
@@ -305,24 +307,45 @@ void MainWindow::addAlarm()
 
 void MainWindow::checkAlarm()
 {
-    QString sekarangWaktu = QTime::currentTime().toString("HH:mm:ss");
+    QString sekarangWaktu =
+        QTime::currentTime().toString("HH:mm:ss");
 
+    QString sekarangTanggal =
+        QDate::currentDate().toString("dd/MM/yyyy");
 
-    QLocale localeId(QLocale::Indonesian);
-    QString sekarangHari = localeId.toString(QDate::currentDate(), "dddd");
+    for (int i = 0; i < ui->listAlarm->count(); i++)
+    {
+        QListWidgetItem *item =
+            ui->listAlarm->item(i);
 
-    for (int i = 0; i < ui->listAlarm->count(); i++) {
-        QListWidgetItem *item = ui->listAlarm->item(i);
-        AlarmCardWidget *card = qobject_cast<AlarmCardWidget*>(ui->listAlarm->itemWidget(item));
+        AlarmCardWidget *card =
+            qobject_cast<AlarmCardWidget*>(
+                ui->listAlarm->itemWidget(item));
 
-        if (card) {
+        if (!card)
+            continue;
 
-            if (card->getTimeText() == sekarangWaktu &&
-                card->isAlarmActive() &&
-                card->getDaysText().contains(sekarangHari, Qt::CaseInsensitive))
-            {
-                QMessageBox::information(this, "Alarm", "WAKTU SUDAH TIBA PADA HARI " + sekarangHari.toUpper() + "!");
-            }
+        QString tanggalAlarm =
+            card->getDaysText();
+
+        tanggalAlarm.remove("📅 ");
+        tanggalAlarm = tanggalAlarm.trimmed();
+
+        QString alarmKey =
+            tanggalAlarm + "_" +
+            card->getTimeText();
+
+        if (card->getTimeText() == sekarangWaktu &&
+            tanggalAlarm == sekarangTanggal &&
+            card->isAlarmActive() &&
+            !alarmSudahBunyi.contains(alarmKey))
+        {
+            alarmSudahBunyi.insert(alarmKey);
+
+            QMessageBox::information(
+                this,
+                "Alarm",
+                "WAKTU SUDAH TIBA!");
         }
     }
 }

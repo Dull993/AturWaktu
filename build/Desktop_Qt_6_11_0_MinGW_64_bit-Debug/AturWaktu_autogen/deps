@@ -15,6 +15,7 @@ AturWaktu_autogen/timestamp: \
 	D:/qt/6.11.0/mingw_64/include/QtCore/QList \
 	D:/qt/6.11.0/mingw_64/include/QtCore/QObject \
 	D:/qt/6.11.0/mingw_64/include/QtCore/QRect \
+	D:/qt/6.11.0/mingw_64/include/QtCore/QSet \
 	D:/qt/6.11.0/mingw_64/include/QtCore/QSize \
 	D:/qt/6.11.0/mingw_64/include/QtCore/QSizeF \
 	D:/qt/6.11.0/mingw_64/include/QtCore/QTimer \

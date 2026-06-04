@@ -410,6 +410,7 @@ CMakeFiles/AturWaktu.dir/main.cpp.obj: C:\Users\torae\AturWaktu\main.cpp \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qstyle.h \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qtabbar.h \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qrubberband.h \
+ D:/qt/6.11.0/mingw_64/include/QtCore/QSet \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/QApplication \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qapplication.h \
  D:/qt/6.11.0/mingw_64/include/QtCore/qcoreapplication.h \
