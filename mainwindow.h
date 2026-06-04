@@ -24,6 +24,7 @@ private slots:
     void addAlarm();
     void checkAlarm();
     void deleteAlarm();
+    void editAlarm();
 
 private:
     Ui::MainWindow *ui;

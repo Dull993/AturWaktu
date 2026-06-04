@@ -289,9 +289,29 @@ QFrame#divider {
            </widget>
           </item>
           <item>
+           <widget class="QDateEdit" name="dateEditAlarm">
+            <property name="calendarPopup">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
            <widget class="QPushButton" name="btnAddAlarm">
             <property name="text">
              <string>＋  Tambah Alarm</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnEditAlarm">
+            <property name="mouseTracking">
+             <bool>false</bool>
+            </property>
+            <property name="text">
+             <string>Edit Alarm</string>
+            </property>
+            <property name="default">
+             <bool>false</bool>
             </property>
            </widget>
           </item>

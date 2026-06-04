@@ -102,6 +102,11 @@ public:
     }
 
     QString getTimeText() const { return timeLabel->text(); }
+
+    void setTimeText(const QString &text)
+    {
+        timeLabel->setText(text);
+    }
     QString getDaysText() const { return descLabel->text(); }
     bool isAlarmActive() const { return toggleSwitch->isChecked(); }
 

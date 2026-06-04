@@ -171,6 +171,7 @@ MainWindow::MainWindow(QWidget *parent)
 
     connect(ui->btnAddAlarm,    &QPushButton::clicked, this, &MainWindow::addAlarm);
     connect(ui->btnDeleteAlarm, &QPushButton::clicked, this, &MainWindow::deleteAlarm);
+    connect(ui->btnEditAlarm, &QPushButton::clicked, this, &MainWindow::editAlarm);
 
 
     QListWidgetItem *item1 = new QListWidgetItem(ui->listAlarm);
@@ -191,7 +192,10 @@ MainWindow::MainWindow(QWidget *parent)
     alarmTimer->setInterval(1000);
     alarmTimer->start();
     connect(alarmTimer, &QTimer::timeout, this, &MainWindow::checkAlarm);
+
+
 }
+
 
 void MainWindow::updateWaktu()
 {
@@ -269,7 +273,72 @@ void MainWindow::deleteAlarm()
     if (!item) return;
     delete item;
 }
+// void MainWindow::editAlarm()
+// {
+//     QListWidgetItem *item = ui->listAlarm->currentItem();
 
+//     if (!item)
+//         return;
+
+//     AlarmCardWidget *oldCard =
+//         qobject_cast<AlarmCardWidget*>(
+//             ui->listAlarm->itemWidget(item));
+
+//     if (!oldCard)
+//         return;
+
+//     QString waktuBaru =
+//         ui->timeEditAlarm->time()
+//             .toString("HH:mm:ss");
+
+//     QString hari =
+//         oldCard->getDaysText();
+
+//     bool aktif =
+//         oldCard->isAlarmActive();
+
+//     AlarmCardWidget *newCard =
+//         new AlarmCardWidget(
+//             waktuBaru,
+//             hari,
+//             aktif,
+//             this);
+
+//     item->setSizeHint(newCard->sizeHint());
+
+//     ui->listAlarm->setItemWidget(
+//         item,
+//         newCard);
+
+//     delete oldCard;
+// }
+void MainWindow::editAlarm()
+{
+    QListWidgetItem *item =
+        ui->listAlarm->currentItem();
+
+    if (!item)
+    {
+        QMessageBox::warning(
+            this,
+            "Edit Alarm",
+            "Pilih alarm terlebih dahulu!");
+        return;
+    }
+
+    AlarmCardWidget *card =
+        qobject_cast<AlarmCardWidget*>(
+            ui->listAlarm->itemWidget(item));
+
+    if (!card)
+        return;
+
+    QString waktuBaru =
+        ui->timeEditAlarm->time()
+            .toString("HH:mm:ss");
+
+    card->setTimeText(waktuBaru);
+}
 MainWindow::~MainWindow()
 {
     delete ui;

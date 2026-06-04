@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QDateEdit>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QListWidget>
@@ -44,7 +45,9 @@ public:
     QSpacerItem *alarmTopSpacer;
     QLabel *labelSetAlarm;
     QTimeEdit *timeEditAlarm;
+    QDateEdit *dateEditAlarm;
     QPushButton *btnAddAlarm;
+    QPushButton *btnEditAlarm;
     QPushButton *btnDeleteAlarm;
     QSpacerItem *alarmBottomSpacer;
     QWidget *tabTimer;
@@ -324,10 +327,22 @@ public:
 
         alarmControlVLayout->addWidget(timeEditAlarm);
 
+        dateEditAlarm = new QDateEdit(tabAlarm);
+        dateEditAlarm->setObjectName("dateEditAlarm");
+        dateEditAlarm->setCalendarPopup(true);
+
+        alarmControlVLayout->addWidget(dateEditAlarm);
+
         btnAddAlarm = new QPushButton(tabAlarm);
         btnAddAlarm->setObjectName("btnAddAlarm");
 
         alarmControlVLayout->addWidget(btnAddAlarm);
+
+        btnEditAlarm = new QPushButton(tabAlarm);
+        btnEditAlarm->setObjectName("btnEditAlarm");
+        btnEditAlarm->setMouseTracking(false);
+
+        alarmControlVLayout->addWidget(btnEditAlarm);
 
         btnDeleteAlarm = new QPushButton(tabAlarm);
         btnDeleteAlarm->setObjectName("btnDeleteAlarm");
@@ -522,11 +537,8 @@ public:
 
         retranslateUi(MainWindow);
 
-<<<<<<< HEAD
         tabAturWaktu->setCurrentIndex(0);
-=======
-        tabAturWaktu->setCurrentIndex(2);
->>>>>>> d83bf5f487a7c1339856fa472075d63c6b881aad
+        btnEditAlarm->setDefault(false);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -542,6 +554,7 @@ public:
         labelSetAlarm->setText(QCoreApplication::translate("MainWindow", "Atur Waktu Alarm", nullptr));
         timeEditAlarm->setDisplayFormat(QCoreApplication::translate("MainWindow", "HH:mm:ss", nullptr));
         btnAddAlarm->setText(QCoreApplication::translate("MainWindow", "\357\274\213  Tambah Alarm", nullptr));
+        btnEditAlarm->setText(QCoreApplication::translate("MainWindow", "Edit Alarm", nullptr));
         btnDeleteAlarm->setText(QCoreApplication::translate("MainWindow", "Hapus Alarm", nullptr));
         tabAturWaktu->setTabText(tabAturWaktu->indexOf(tabAlarm), QCoreApplication::translate("MainWindow", "Alarm", nullptr));
         labelTimerHeader->setText(QCoreApplication::translate("MainWindow", "TIMER", nullptr));

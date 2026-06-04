@@ -1,7 +1,7 @@
 CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.obj: \
- C:\Users\torae\Downloads\AturWaktuV0.1-20260604T051701Z-3-001\AturWaktuV0.1\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AturWaktu_autogen\mocs_compilation.cpp \
- C:\Users\torae\Downloads\AturWaktuV0.1-20260604T051701Z-3-001\AturWaktuV0.1\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AturWaktu_autogen\EWIEGA46WW/moc_alarmcardwidget.cpp \
- C:/Users/torae/Downloads/AturWaktuV0.1-20260604T051701Z-3-001/AturWaktuV0.1/alarmcardwidget.h \
+ C:\Users\torae\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AturWaktu_autogen\mocs_compilation.cpp \
+ C:\Users\torae\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AturWaktu_autogen\EWIEGA46WW/moc_alarmcardwidget.cpp \
+ C:/Users/torae/AturWaktu/alarmcardwidget.h \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/QWidget \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qwidget.h \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -404,7 +404,7 @@ CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.obj: \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/QVBoxLayout \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/QGraphicsDropShadowEffect \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qgraphicseffect.h \
- C:/Users/torae/Downloads/AturWaktuV0.1-20260604T051701Z-3-001/AturWaktuV0.1/toggleswitch.h \
+ C:/Users/torae/AturWaktu/toggleswitch.h \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/QCheckBox \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qcheckbox.h \
  D:/qt/6.11.0/mingw_64/include/QtGui/QPainter \
@@ -443,12 +443,12 @@ CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.obj: \
  D:/qt/6.11.0/mingw_64/include/QtCore/qtmochelpers.h \
  D:/qt/6.11.0/mingw_64/include/QtCore/qtmocconstants.h \
  D:/qt/6.11.0/mingw_64/include/QtCore/q20algorithm.h \
- C:\Users\torae\Downloads\AturWaktuV0.1-20260604T051701Z-3-001\AturWaktuV0.1\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AturWaktu_autogen\EWIEGA46WW/moc_mainwindow.cpp \
- C:/Users/torae/Downloads/AturWaktuV0.1-20260604T051701Z-3-001/AturWaktuV0.1/mainwindow.h \
+ C:\Users\torae\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AturWaktu_autogen\EWIEGA46WW/moc_mainwindow.cpp \
+ C:/Users/torae/AturWaktu/mainwindow.h \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qmainwindow.h \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qtabwidget.h \
  D:/qt/6.11.0/mingw_64/include/QtCore/QTimer \
  D:/qt/6.11.0/mingw_64/include/QtCore/qtimer.h \
- C:\Users\torae\Downloads\AturWaktuV0.1-20260604T051701Z-3-001\AturWaktuV0.1\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AturWaktu_autogen\EWIEGA46WW/moc_toggleswitch.cpp \
- C:/Users/torae/Downloads/AturWaktuV0.1-20260604T051701Z-3-001/AturWaktuV0.1/toggleswitch.h
+ C:\Users\torae\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AturWaktu_autogen\EWIEGA46WW/moc_toggleswitch.cpp \
+ C:/Users/torae/AturWaktu/toggleswitch.h

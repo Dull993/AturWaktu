@@ -1,6 +1,6 @@
 CMakeFiles/AturWaktu.dir/mainwindow.cpp.obj: \
- C:\Users\torae\Downloads\AturWaktuV0.1-20260604T051701Z-3-001\AturWaktuV0.1\mainwindow.cpp \
- C:\Users\torae\Downloads\AturWaktuV0.1-20260604T051701Z-3-001\AturWaktuV0.1\mainwindow.h \
+ C:\Users\torae\AturWaktu\mainwindow.cpp \
+ C:\Users\torae\AturWaktu\mainwindow.h \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/QMainWindow \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qmainwindow.h \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -392,7 +392,7 @@ CMakeFiles/AturWaktu.dir/mainwindow.cpp.obj: \
  D:/qt/6.11.0/mingw_64/include/QtCore/qabstracteventdispatcher.h \
  D:/qt/6.11.0/mingw_64/include/QtCore/qeventloop.h \
  D:/qt/6.11.0/mingw_64/include/QtCore/qdeadlinetimer.h \
- C:/Users/torae/Downloads/AturWaktuV0.1-20260604T051701Z-3-001/AturWaktuV0.1/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/AturWaktu_autogen/include/ui_mainwindow.h \
+ C:/Users/torae/AturWaktu/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/AturWaktu_autogen/include/ui_mainwindow.h \
  D:/qt/6.11.0/mingw_64/include/QtCore/QVariant \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/QApplication \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qapplication.h \
@@ -404,6 +404,14 @@ CMakeFiles/AturWaktu.dir/mainwindow.cpp.obj: \
  D:/qt/6.11.0/mingw_64/include/QtGui/qinputmethod.h \
  D:/qt/6.11.0/mingw_64/include/QtCore/qlocale.h \
  D:/qt/6.11.0/mingw_64/include/QtGui/qguiapplication_platform.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/QDateEdit \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qdatetimeedit.h \
+ D:/qt/6.11.0/mingw_64/include/QtCore/qtimezone.h \
+ D:/qt/6.11.0/mingw_64/include/QtCore/qdatetime.h \
+ D:/qt/6.11.0/mingw_64/include/QtCore/qcalendar.h \
+ D:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
+ D:/qt/6.11.0/mingw_64/include/QtGui/qvalidator.h \
+ D:/qt/6.11.0/mingw_64/include/QtCore/qregularexpression.h \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/QHBoxLayout \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qboxlayout.h \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qlayout.h \
@@ -425,9 +433,6 @@ CMakeFiles/AturWaktu.dir/mainwindow.cpp.obj: \
  D:/qt/6.11.0/mingw_64/include/QtCore/qitemselectionmodel.h \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qstyleoption.h \
- D:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractspinbox.h \
- D:/qt/6.11.0/mingw_64/include/QtGui/qvalidator.h \
- D:/qt/6.11.0/mingw_64/include/QtCore/qregularexpression.h \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qslider.h \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qabstractslider.h \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qstyle.h \
@@ -445,10 +450,6 @@ CMakeFiles/AturWaktu.dir/mainwindow.cpp.obj: \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qstatusbar.h \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/QTabWidget \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/QTimeEdit \
- D:/qt/6.11.0/mingw_64/include/QtWidgets/qdatetimeedit.h \
- D:/qt/6.11.0/mingw_64/include/QtCore/qtimezone.h \
- D:/qt/6.11.0/mingw_64/include/QtCore/qdatetime.h \
- D:/qt/6.11.0/mingw_64/include/QtCore/qcalendar.h \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/QVBoxLayout \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/QWidget \
  D:/qt/6.11.0/mingw_64/include/QtCore/QTime \
@@ -456,7 +457,7 @@ CMakeFiles/AturWaktu.dir/mainwindow.cpp.obj: \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qmessagebox.h \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qdialog.h \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
- C:\Users\torae\Downloads\AturWaktuV0.1-20260604T051701Z-3-001\AturWaktuV0.1\alarmcardwidget.h \
+ C:\Users\torae\AturWaktu\alarmcardwidget.h \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/QWidget \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/QFrame \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/QLabel \
@@ -465,7 +466,7 @@ CMakeFiles/AturWaktu.dir/mainwindow.cpp.obj: \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/QVBoxLayout \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/QGraphicsDropShadowEffect \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qgraphicseffect.h \
- C:\Users\torae\Downloads\AturWaktuV0.1-20260604T051701Z-3-001\AturWaktuV0.1\toggleswitch.h \
+ C:\Users\torae\AturWaktu\toggleswitch.h \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/QCheckBox \
  D:/qt/6.11.0/mingw_64/include/QtWidgets/qcheckbox.h \
  D:/qt/6.11.0/mingw_64/include/QtGui/QPainter \

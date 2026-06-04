@@ -6,7 +6,7 @@ set("CMAKE_CXX_COMPILER" "D:/qt/Tools/mingw1310_64/bin/g++.exe" CACHE "FILEPATH"
 set("CMAKE_C_COMPILER" "D:/qt/Tools/mingw1310_64/bin/gcc.exe" CACHE "FILEPATH" "" FORCE)
 set("CMAKE_GENERATOR" "MinGW Makefiles" CACHE "STRING" "" FORCE)
 set("CMAKE_PREFIX_PATH" "D:/qt/6.11.0/mingw_64" CACHE "PATH" "" FORCE)
-set("CMAKE_PROJECT_INCLUDE_BEFORE" "C:/Users/torae/Downloads/AturWaktuV0.1-20260604T051701Z-3-001/AturWaktuV0.1/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qtcreator/cmake-helper/qtcreator-project.cmake" CACHE "FILEPATH" "" FORCE)
+set("CMAKE_PROJECT_INCLUDE_BEFORE" "C:/Users/torae/AturWaktu/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/.qtcreator/cmake-helper/qtcreator-project.cmake" CACHE "FILEPATH" "" FORCE)
 set("QT_CREATOR_ENABLE_MAINTENANCE_TOOL_PROVIDER" "ON" CACHE "BOOL" "" FORCE)
 set("QT_CREATOR_ENABLE_PACKAGE_MANAGER_SETUP" "ON" CACHE "BOOL" "" FORCE)
 set("QT_ENABLE_QML_DEBUG" "ON" CACHE "BOOL" "" FORCE)

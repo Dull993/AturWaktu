@@ -1,5 +1,5 @@
-C:/Users/torae/Downloads/AturWaktuV0.1-20260604T051701Z-3-001/AturWaktuV0.1/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/AturWaktu_autogen/EWIEGA46WW/moc_toggleswitch.cpp: C:/Users/torae/Downloads/AturWaktuV0.1-20260604T051701Z-3-001/AturWaktuV0.1/toggleswitch.h \
-  C:/Users/torae/Downloads/AturWaktuV0.1-20260604T051701Z-3-001/AturWaktuV0.1/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/AturWaktu_autogen/moc_predefs.h \
+C:/Users/torae/AturWaktu/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/AturWaktu_autogen/EWIEGA46WW/moc_toggleswitch.cpp: C:/Users/torae/AturWaktu/toggleswitch.h \
+  C:/Users/torae/AturWaktu/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/AturWaktu_autogen/moc_predefs.h \
   D:/qt/6.11.0/mingw_64/include/QtCore/QList \
   D:/qt/6.11.0/mingw_64/include/QtCore/QObject \
   D:/qt/6.11.0/mingw_64/include/QtCore/QRect \
