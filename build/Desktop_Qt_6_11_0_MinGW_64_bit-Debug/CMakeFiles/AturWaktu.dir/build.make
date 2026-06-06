@@ -159,7 +159,9 @@ AturWaktu.exe: CMakeFiles/AturWaktu.dir/mainwindow.cpp.obj
 AturWaktu.exe: CMakeFiles/AturWaktu.dir/AturWaktu_autogen/EWIEGA46WW/qrc_resources.cpp.obj
 AturWaktu.exe: CMakeFiles/AturWaktu.dir/build.make
 AturWaktu.exe: D:/qt/6.11.0/mingw_64/lib/libQt6Widgets.a
+AturWaktu.exe: D:/qt/6.11.0/mingw_64/lib/libQt6Multimedia.a
 AturWaktu.exe: D:/qt/6.11.0/mingw_64/lib/libQt6Gui.a
+AturWaktu.exe: D:/qt/6.11.0/mingw_64/lib/libQt6Network.a
 AturWaktu.exe: D:/qt/6.11.0/mingw_64/lib/libQt6Core.a
 AturWaktu.exe: D:/qt/6.11.0/mingw_64/lib/libQt6EntryPoint.a
 AturWaktu.exe: CMakeFiles/AturWaktu.dir/linkLibs.rsp

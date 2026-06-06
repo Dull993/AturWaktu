@@ -5,6 +5,8 @@
 #include <QTimer>
 #include <QListWidgetItem>
 #include <QSet>
+#include <QSoundEffect>
+
 
 
 QT_BEGIN_NAMESPACE
@@ -47,6 +49,7 @@ private:
     QTimer *alarmTimer;
     QListWidgetItem *selectedAlarmItem = nullptr;
     QSet<QString> alarmSudahBunyi;
+    QSoundEffect *alarmSound;
 
 };
 

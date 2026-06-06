@@ -10,6 +10,11 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
+    ui->dateEditAlarm->setDate(QDate::currentDate());
+    ui->dateEditAlarm->setMinimumDate(QDate::currentDate());
+
+    ui->timeEditAlarm->setTime(QTime::currentTime());
+
 
     ui->tabAturWaktu->setStyleSheet(R"(
         QTabWidget::pane {
@@ -197,12 +202,18 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->btnPreset30, &QPushButton::clicked, this, [=]() { setPreset(30); });
 
 
+    alarmSound = new QSoundEffect(this);
 
+    alarmSound->setSource(
+        QUrl("qrc:/Alarm.wav"));
+
+    alarmSound->setLoopCount(QSoundEffect::Infinite);
+
+    alarmSound->setVolume(1.0f);
 
     connect(ui->btnAddAlarm,    &QPushButton::clicked, this, &MainWindow::addAlarm);
     connect(ui->btnDeleteAlarm, &QPushButton::clicked, this, &MainWindow::deleteAlarm);
     connect(ui->btnEditAlarm, &QPushButton::clicked, this, &MainWindow::editAlarm);
-
 
     QListWidgetItem *item1 = new QListWidgetItem(ui->listAlarm);
     AlarmCardWidget *card1 = new AlarmCardWidget("07:00:00", "Senin, Selasa, Rabu, Kamis, Jumat", true, this);
@@ -325,9 +336,7 @@ void MainWindow::checkAlarm()
         if (!card)
             continue;
 
-        QString tanggalAlarm =
-            card->getDaysText();
-
+        QString tanggalAlarm = card->getDaysText();
         tanggalAlarm.remove("📅 ");
         tanggalAlarm = tanggalAlarm.trimmed();
 
@@ -342,14 +351,20 @@ void MainWindow::checkAlarm()
         {
             alarmSudahBunyi.insert(alarmKey);
 
-            QMessageBox::information(
-                this,
-                "Alarm",
-                "WAKTU SUDAH TIBA!");
+            // Mainkan suara
+            alarmSound->play();
+
+            // Tampilkan popup
+            QMessageBox msg(this);
+            msg.setWindowTitle("Alarm");
+            msg.setText("🔔 WAKTU SUDAH TIBA!");
+            msg.exec();
+
+            // Hentikan suara setelah popup ditutup
+            alarmSound->stop();
         }
     }
 }
-
 void MainWindow::deleteAlarm()
 {
     QListWidgetItem *item = ui->listAlarm->currentItem();

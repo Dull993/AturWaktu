@@ -9,8 +9,8 @@ set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
 
-find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
-find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
+find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets Multimedia)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets Multimedia)
 
 include_directories(${CMAKE_CURRENT_BINARY_DIR})
 
@@ -29,7 +29,10 @@ qt_add_executable(AturWaktu
     resources.qrc
 )
 
-target_link_libraries(AturWaktu PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(AturWaktu PRIVATE
+    Qt${QT_VERSION_MAJOR}::Widgets
+    Qt${QT_VERSION_MAJOR}::Multimedia
+)
 
 set_target_properties(AturWaktu PROPERTIES
     WIN32_EXECUTABLE TRUE

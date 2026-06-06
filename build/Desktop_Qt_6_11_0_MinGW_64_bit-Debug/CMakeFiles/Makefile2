@@ -79,8 +79,8 @@ clean: CMakeFiles/AturWaktu_autogen.dir/clean
 # Target rules for target CMakeFiles/AturWaktu.dir
 
 # All Build rule for target.
-CMakeFiles/AturWaktu.dir/all: CMakeFiles/AturWaktu_autogen_timestamp_deps.dir/all
 CMakeFiles/AturWaktu.dir/all: CMakeFiles/AturWaktu_autogen.dir/all
+CMakeFiles/AturWaktu.dir/all: CMakeFiles/AturWaktu_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AturWaktu.dir\build.make CMakeFiles/AturWaktu.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AturWaktu.dir\build.make CMakeFiles/AturWaktu.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\torae\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target AturWaktu"

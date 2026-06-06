@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-46d1d3b22b992325f2d8.json",
+					"jsonFile" : "directory-.-Debug-0665d959807c09be0cad.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "AturWaktu::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-AturWaktu-Debug-aaff25a3bc9a66d7826d.json",
+					"jsonFile" : "target-AturWaktu-Debug-45562541c985f63962cc.json",
 					"name" : "AturWaktu",
 					"projectIndex" : 0
 				},
