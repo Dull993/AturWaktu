@@ -26,6 +26,7 @@ set(PROJECT_SOURCES
 qt_add_executable(AturWaktu
     MANUAL_FINALIZATION
     ${PROJECT_SOURCES}
+    resources.qrc
 )
 
 target_link_libraries(AturWaktu PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)

@@ -305,7 +305,7 @@ QFrame#divider {
           <item>
            <widget class="QPushButton" name="btnEditAlarm">
             <property name="mouseTracking">
-             <bool>false</bool>
+             <bool>true</bool>
             </property>
             <property name="text">
              <string>Edit Alarm</string>

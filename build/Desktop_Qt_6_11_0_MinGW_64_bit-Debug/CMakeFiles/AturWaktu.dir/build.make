@@ -75,11 +75,19 @@ AturWaktu_autogen/timestamp: CMakeFiles/AturWaktu.dir/compiler_depend.ts
 	D:\qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen C:/Users/torae/AturWaktu/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/AturWaktu_autogen.dir/AutogenInfo.json Debug
 	D:\qt\Tools\CMake_64\bin\cmake.exe -E touch C:/Users/torae/AturWaktu/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/AturWaktu_autogen/timestamp
 
+AturWaktu_autogen/EWIEGA46WW/qrc_resources.cpp: C:/Users/torae/AturWaktu/resources.qrc
+AturWaktu_autogen/EWIEGA46WW/qrc_resources.cpp: CMakeFiles/AturWaktu_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json
+AturWaktu_autogen/EWIEGA46WW/qrc_resources.cpp: C:/Users/torae/AturWaktu/Alarm.wav
+AturWaktu_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/6.11.0/mingw_64/bin/rcc.exe
+AturWaktu_autogen/EWIEGA46WW/qrc_resources.cpp: D:/qt/6.11.0/mingw_64/bin/rcc.exe
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\torae\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Automatic RCC for resources.qrc"
+	D:\qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc C:/Users/torae/AturWaktu/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/AturWaktu_autogen.dir/AutoRcc_resources_EWIEGA46WW_Info.json Debug
+
 CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.obj: CMakeFiles/AturWaktu.dir/flags.make
 CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.obj: CMakeFiles/AturWaktu.dir/includes_CXX.rsp
 CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.obj: AturWaktu_autogen/mocs_compilation.cpp
 CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.obj: CMakeFiles/AturWaktu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\torae\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\torae\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.obj"
 	D:\qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\AturWaktu.dir\AturWaktu_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\AturWaktu.dir\AturWaktu_autogen\mocs_compilation.cpp.obj -c C:\Users\torae\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AturWaktu_autogen\mocs_compilation.cpp
 
 CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.i: cmake_force
@@ -94,7 +102,7 @@ CMakeFiles/AturWaktu.dir/main.cpp.obj: CMakeFiles/AturWaktu.dir/flags.make
 CMakeFiles/AturWaktu.dir/main.cpp.obj: CMakeFiles/AturWaktu.dir/includes_CXX.rsp
 CMakeFiles/AturWaktu.dir/main.cpp.obj: C:/Users/torae/AturWaktu/main.cpp
 CMakeFiles/AturWaktu.dir/main.cpp.obj: CMakeFiles/AturWaktu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\torae\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/AturWaktu.dir/main.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\torae\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/AturWaktu.dir/main.cpp.obj"
 	D:\qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AturWaktu.dir/main.cpp.obj -MF CMakeFiles\AturWaktu.dir\main.cpp.obj.d -o CMakeFiles\AturWaktu.dir\main.cpp.obj -c C:\Users\torae\AturWaktu\main.cpp
 
 CMakeFiles/AturWaktu.dir/main.cpp.i: cmake_force
@@ -109,7 +117,7 @@ CMakeFiles/AturWaktu.dir/mainwindow.cpp.obj: CMakeFiles/AturWaktu.dir/flags.make
 CMakeFiles/AturWaktu.dir/mainwindow.cpp.obj: CMakeFiles/AturWaktu.dir/includes_CXX.rsp
 CMakeFiles/AturWaktu.dir/mainwindow.cpp.obj: C:/Users/torae/AturWaktu/mainwindow.cpp
 CMakeFiles/AturWaktu.dir/mainwindow.cpp.obj: CMakeFiles/AturWaktu.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\torae\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/AturWaktu.dir/mainwindow.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\torae\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/AturWaktu.dir/mainwindow.cpp.obj"
 	D:\qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AturWaktu.dir/mainwindow.cpp.obj -MF CMakeFiles\AturWaktu.dir\mainwindow.cpp.obj.d -o CMakeFiles\AturWaktu.dir\mainwindow.cpp.obj -c C:\Users\torae\AturWaktu\mainwindow.cpp
 
 CMakeFiles/AturWaktu.dir/mainwindow.cpp.i: cmake_force
@@ -120,11 +128,27 @@ CMakeFiles/AturWaktu.dir/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AturWaktu.dir/mainwindow.cpp.s"
 	D:\qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\torae\AturWaktu\mainwindow.cpp -o CMakeFiles\AturWaktu.dir\mainwindow.cpp.s
 
+CMakeFiles/AturWaktu.dir/AturWaktu_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CMakeFiles/AturWaktu.dir/flags.make
+CMakeFiles/AturWaktu.dir/AturWaktu_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CMakeFiles/AturWaktu.dir/includes_CXX.rsp
+CMakeFiles/AturWaktu.dir/AturWaktu_autogen/EWIEGA46WW/qrc_resources.cpp.obj: AturWaktu_autogen/EWIEGA46WW/qrc_resources.cpp
+CMakeFiles/AturWaktu.dir/AturWaktu_autogen/EWIEGA46WW/qrc_resources.cpp.obj: CMakeFiles/AturWaktu.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\torae\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/AturWaktu.dir/AturWaktu_autogen/EWIEGA46WW/qrc_resources.cpp.obj"
+	D:\qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/AturWaktu.dir/AturWaktu_autogen/EWIEGA46WW/qrc_resources.cpp.obj -MF CMakeFiles\AturWaktu.dir\AturWaktu_autogen\EWIEGA46WW\qrc_resources.cpp.obj.d -o CMakeFiles\AturWaktu.dir\AturWaktu_autogen\EWIEGA46WW\qrc_resources.cpp.obj -c C:\Users\torae\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AturWaktu_autogen\EWIEGA46WW\qrc_resources.cpp
+
+CMakeFiles/AturWaktu.dir/AturWaktu_autogen/EWIEGA46WW/qrc_resources.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/AturWaktu.dir/AturWaktu_autogen/EWIEGA46WW/qrc_resources.cpp.i"
+	D:\qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\torae\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AturWaktu_autogen\EWIEGA46WW\qrc_resources.cpp > CMakeFiles\AturWaktu.dir\AturWaktu_autogen\EWIEGA46WW\qrc_resources.cpp.i
+
+CMakeFiles/AturWaktu.dir/AturWaktu_autogen/EWIEGA46WW/qrc_resources.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/AturWaktu.dir/AturWaktu_autogen/EWIEGA46WW/qrc_resources.cpp.s"
+	D:\qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\torae\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\AturWaktu_autogen\EWIEGA46WW\qrc_resources.cpp -o CMakeFiles\AturWaktu.dir\AturWaktu_autogen\EWIEGA46WW\qrc_resources.cpp.s
+
 # Object files for target AturWaktu
 AturWaktu_OBJECTS = \
 "CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.obj" \
 "CMakeFiles/AturWaktu.dir/main.cpp.obj" \
-"CMakeFiles/AturWaktu.dir/mainwindow.cpp.obj"
+"CMakeFiles/AturWaktu.dir/mainwindow.cpp.obj" \
+"CMakeFiles/AturWaktu.dir/AturWaktu_autogen/EWIEGA46WW/qrc_resources.cpp.obj"
 
 # External object files for target AturWaktu
 AturWaktu_EXTERNAL_OBJECTS =
@@ -132,6 +156,7 @@ AturWaktu_EXTERNAL_OBJECTS =
 AturWaktu.exe: CMakeFiles/AturWaktu.dir/AturWaktu_autogen/mocs_compilation.cpp.obj
 AturWaktu.exe: CMakeFiles/AturWaktu.dir/main.cpp.obj
 AturWaktu.exe: CMakeFiles/AturWaktu.dir/mainwindow.cpp.obj
+AturWaktu.exe: CMakeFiles/AturWaktu.dir/AturWaktu_autogen/EWIEGA46WW/qrc_resources.cpp.obj
 AturWaktu.exe: CMakeFiles/AturWaktu.dir/build.make
 AturWaktu.exe: D:/qt/6.11.0/mingw_64/lib/libQt6Widgets.a
 AturWaktu.exe: D:/qt/6.11.0/mingw_64/lib/libQt6Gui.a
@@ -140,7 +165,7 @@ AturWaktu.exe: D:/qt/6.11.0/mingw_64/lib/libQt6EntryPoint.a
 AturWaktu.exe: CMakeFiles/AturWaktu.dir/linkLibs.rsp
 AturWaktu.exe: CMakeFiles/AturWaktu.dir/objects1.rsp
 AturWaktu.exe: CMakeFiles/AturWaktu.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\torae\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable AturWaktu.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\torae\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable AturWaktu.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\AturWaktu.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -151,6 +176,7 @@ CMakeFiles/AturWaktu.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles\AturWaktu.dir\cmake_clean.cmake
 .PHONY : CMakeFiles/AturWaktu.dir/clean
 
+CMakeFiles/AturWaktu.dir/depend: AturWaktu_autogen/EWIEGA46WW/qrc_resources.cpp
 CMakeFiles/AturWaktu.dir/depend: AturWaktu_autogen/timestamp
 	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\torae\AturWaktu C:\Users\torae\AturWaktu C:\Users\torae\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug C:\Users\torae\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug C:\Users\torae\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles\AturWaktu.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/AturWaktu.dir/depend

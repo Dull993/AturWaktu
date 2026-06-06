@@ -199,6 +199,30 @@ AturWaktu_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\AturWaktu_autogen.dir\build.make CMakeFiles/AturWaktu_autogen.dir/build
 .PHONY : AturWaktu_autogen/fast
 
+AturWaktu_autogen/EWIEGA46WW/qrc_resources.obj: AturWaktu_autogen/EWIEGA46WW/qrc_resources.cpp.obj
+.PHONY : AturWaktu_autogen/EWIEGA46WW/qrc_resources.obj
+
+# target to build an object file
+AturWaktu_autogen/EWIEGA46WW/qrc_resources.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AturWaktu.dir\build.make CMakeFiles/AturWaktu.dir/AturWaktu_autogen/EWIEGA46WW/qrc_resources.cpp.obj
+.PHONY : AturWaktu_autogen/EWIEGA46WW/qrc_resources.cpp.obj
+
+AturWaktu_autogen/EWIEGA46WW/qrc_resources.i: AturWaktu_autogen/EWIEGA46WW/qrc_resources.cpp.i
+.PHONY : AturWaktu_autogen/EWIEGA46WW/qrc_resources.i
+
+# target to preprocess a source file
+AturWaktu_autogen/EWIEGA46WW/qrc_resources.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AturWaktu.dir\build.make CMakeFiles/AturWaktu.dir/AturWaktu_autogen/EWIEGA46WW/qrc_resources.cpp.i
+.PHONY : AturWaktu_autogen/EWIEGA46WW/qrc_resources.cpp.i
+
+AturWaktu_autogen/EWIEGA46WW/qrc_resources.s: AturWaktu_autogen/EWIEGA46WW/qrc_resources.cpp.s
+.PHONY : AturWaktu_autogen/EWIEGA46WW/qrc_resources.s
+
+# target to generate assembly for a file
+AturWaktu_autogen/EWIEGA46WW/qrc_resources.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\AturWaktu.dir\build.make CMakeFiles/AturWaktu.dir/AturWaktu_autogen/EWIEGA46WW/qrc_resources.cpp.s
+.PHONY : AturWaktu_autogen/EWIEGA46WW/qrc_resources.cpp.s
+
 AturWaktu_autogen/mocs_compilation.obj: AturWaktu_autogen/mocs_compilation.cpp.obj
 .PHONY : AturWaktu_autogen/mocs_compilation.obj
 
@@ -286,6 +310,9 @@ help:
 	@echo ... AturWaktu_autogen
 	@echo ... AturWaktu_autogen_timestamp_deps
 	@echo ... AturWaktu
+	@echo ... AturWaktu_autogen/EWIEGA46WW/qrc_resources.obj
+	@echo ... AturWaktu_autogen/EWIEGA46WW/qrc_resources.i
+	@echo ... AturWaktu_autogen/EWIEGA46WW/qrc_resources.s
 	@echo ... AturWaktu_autogen/mocs_compilation.obj
 	@echo ... AturWaktu_autogen/mocs_compilation.i
 	@echo ... AturWaktu_autogen/mocs_compilation.s
