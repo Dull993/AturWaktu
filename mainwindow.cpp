@@ -61,7 +61,8 @@ MainWindow::MainWindow(QWidget *parent)
         "}"
         "QPushButton:hover { opacity: 0.9; }";
 
- //connect kan tombol button
+    //connect kan tombol button
+    //percantik ui nya button alarm
 
     ui->btnStartSW->setStyleSheet(gradientPrimaryStyle);
     ui->btnStartTimer->setStyleSheet(gradientPrimaryStyle);
