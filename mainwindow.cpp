@@ -272,7 +272,17 @@ void MainWindow::updateTimer()
         ui->btnStartTimer->setText("Start");
         ui->labelTimer->setText("SELESAI!");
         ui->labelTimerRemaining->setText("");
-        QMessageBox::information(this, "Timer", "Waktu habis!");
+
+        alarmSound->play();
+
+        QMessageBox msg(this);
+        msg.setWindowTitle("Timer");
+        msg.setText("⏳ WAKTU TIMER HABIS!");
+        msg.exec();
+
+
+        alarmSound->stop();
+
     }
 }
 
