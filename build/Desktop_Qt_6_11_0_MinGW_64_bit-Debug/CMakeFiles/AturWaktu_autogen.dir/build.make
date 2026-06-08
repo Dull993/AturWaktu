@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = D:\qt\Tools\CMake_64\bin\cmake.exe
+CMAKE_COMMAND = D:\Qt\Tools\CMake_64\bin\cmake.exe
 
 # The command to remove a file.
-RM = D:\qt\Tools\CMake_64\bin\cmake.exe -E rm -f
+RM = D:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\torae\AturWaktu
+CMAKE_SOURCE_DIR = C:\Users\Lenovo\Desktop\bljrgit\AturWaktu
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\torae\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug
+CMAKE_BINARY_DIR = C:\Users\Lenovo\Desktop\bljrgit\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug
 
 # Utility rule file for AturWaktu_autogen.
 
@@ -67,12 +67,12 @@ include CMakeFiles/AturWaktu_autogen.dir/progress.make
 
 CMakeFiles/AturWaktu_autogen: AturWaktu_autogen/timestamp
 
-AturWaktu_autogen/timestamp: D:/qt/6.11.0/mingw_64/bin/moc.exe
-AturWaktu_autogen/timestamp: D:/qt/6.11.0/mingw_64/bin/uic.exe
+AturWaktu_autogen/timestamp: D:/Qt/6.11.0/mingw_64/bin/moc.exe
+AturWaktu_autogen/timestamp: D:/Qt/6.11.0/mingw_64/bin/uic.exe
 AturWaktu_autogen/timestamp: CMakeFiles/AturWaktu_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\torae\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target AturWaktu"
-	D:\qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen C:/Users/torae/AturWaktu/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/AturWaktu_autogen.dir/AutogenInfo.json Debug
-	D:\qt\Tools\CMake_64\bin\cmake.exe -E touch C:/Users/torae/AturWaktu/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/AturWaktu_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\Lenovo\Desktop\bljrgit\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target AturWaktu"
+	D:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen C:/Users/Lenovo/Desktop/bljrgit/AturWaktu/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/CMakeFiles/AturWaktu_autogen.dir/AutogenInfo.json Debug
+	D:\Qt\Tools\CMake_64\bin\cmake.exe -E touch C:/Users/Lenovo/Desktop/bljrgit/AturWaktu/build/Desktop_Qt_6_11_0_MinGW_64_bit-Debug/AturWaktu_autogen/timestamp
 
 AturWaktu_autogen: AturWaktu_autogen/timestamp
 AturWaktu_autogen: CMakeFiles/AturWaktu_autogen
@@ -88,6 +88,6 @@ CMakeFiles/AturWaktu_autogen.dir/clean:
 .PHONY : CMakeFiles/AturWaktu_autogen.dir/clean
 
 CMakeFiles/AturWaktu_autogen.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\torae\AturWaktu C:\Users\torae\AturWaktu C:\Users\torae\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug C:\Users\torae\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug C:\Users\torae\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles\AturWaktu_autogen.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Lenovo\Desktop\bljrgit\AturWaktu C:\Users\Lenovo\Desktop\bljrgit\AturWaktu C:\Users\Lenovo\Desktop\bljrgit\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug C:\Users\Lenovo\Desktop\bljrgit\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug C:\Users\Lenovo\Desktop\bljrgit\AturWaktu\build\Desktop_Qt_6_11_0_MinGW_64_bit-Debug\CMakeFiles\AturWaktu_autogen.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/AturWaktu_autogen.dir/depend
 

@@ -218,19 +218,9 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->btnDeleteAlarm, &QPushButton::clicked, this, &MainWindow::deleteAlarm);
     connect(ui->btnEditAlarm, &QPushButton::clicked, this, &MainWindow::editAlarm);
 
-    QListWidgetItem *item1 = new QListWidgetItem(ui->listAlarm);
-    AlarmCardWidget *card1 = new AlarmCardWidget("07:00:00", "Senin, Selasa, Rabu, Kamis, Jumat", true, this);
-    item1->setSizeHint(card1->sizeHint());
-    ui->listAlarm->addItem(item1);
-    ui->listAlarm->setItemWidget(item1, card1);
-    connect(card1, &AlarmCardWidget::deletePressed, [=]() { delete item1; });
 
-    QListWidgetItem *item2 = new QListWidgetItem(ui->listAlarm);
-    AlarmCardWidget *card2 = new AlarmCardWidget("12:30:00", "Sabtu, Minggu", false, this);
-    item2->setSizeHint(card2->sizeHint());
-    ui->listAlarm->addItem(item2);
-    ui->listAlarm->setItemWidget(item2, card2);
-    connect(card2, &AlarmCardWidget::deletePressed, [=]() { delete item2; });
+
+
 
     alarmTimer = new QTimer(this);
     alarmTimer->setInterval(1000);
